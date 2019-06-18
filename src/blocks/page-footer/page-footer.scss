@@ -1,0 +1,33 @@
+.page-footer {
+
+  $block-name: &;
+  padding: 20px 15px 15px 15px;
+
+  @include media-breakpoint-up(xs) {
+  }
+  @include media-breakpoint-up(sm) {
+  }
+  @include media-breakpoint-up(md) {
+  }
+  @include media-breakpoint-up(lg) {
+  }
+  @include media-breakpoint-up(xl) {
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    @include media-breakpoint-up(xs) {
+    }
+    @include media-breakpoint-up(sm) {
+    }
+    @include media-breakpoint-up(md) {
+    }
+    @include media-breakpoint-up(lg) {
+    }
+    @include media-breakpoint-up(xl) {
+    }
+  }
+}
