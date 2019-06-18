@@ -5,22 +5,45 @@
     "page-header": [],
     "page-footer": [],
     "sprite-svg": [],
-    "sprite-png": []
+    "sprite-png": [],
+    "logo": [],
+    "btn": [],
+    "input": [],
+    "form": [],
+    "navbar": [],
+    "breadcrumb": [],
+    "dropdown": [],
+    "modal": [],
+    "list": [],
+    "pagination": [],
+    "progress": [],
+    "scrollspy": [],
+    "tooltips": [],
+    "cards": [],
+    "search": [],
+    "toast": [],
+    "slider": [],
+    "image": [],
+    "select": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
     "./src/scss/functions.scss",
     "./node_modules/bootstrap/scss/bootstrap.scss",
+    "./node_modules/bootstrap-select/sass/bootstrap-select.scss",
     "./node_modules/slick-carousel/slick/slick.scss"
   ],
   "addCssAfter": [],
   "singleCompiled": [],
   "addJsBefore": [
     "./node_modules/jquery/dist/jquery.min.js",
+    "./node_modules/popper.js/dist/umd/popper.min.js",
+    "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+    "./node_modules/slick-carousel/slick/slick.min.js",
+    "./node_modules/bootstrap-select/dist/js/bootstrap-select.min.js",
     "./node_modules/svg4everybody/dist/svg4everybody.js",
-    "./node_modules/object-fit-images/dist/ofi.min.js",
-    "./node_modules/slick-carousel/slick/slick.min.js"
+    "./node_modules/object-fit-images/dist/ofi.min.js"
   ],
   "addJsAfter": [
     "./src/js/global-script.js"
