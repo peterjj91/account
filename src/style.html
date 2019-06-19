@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Стили</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+  <div class="page__inner">
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="page__main-content" role="main">
+
+        <div class="container">
+          
+          <div class="display-1">Typography</div>
+
+          <br><br>
+
+          <h1 class="h1">H1: Montserrat, SemiBold, 40 px, #252528</h1>
+          <h2 class="h2">H2: Montserrat, SemiBold, 30 px, #252528</h1>
+          <h3 class="h3">H3: Montserrat, SemiBold, 22 px, #252528</h1>
+          <h4 class="h4">H4: Proxima Nova, Semibold, 20 px, #252528</h1>
+
+          <p class="text">
+            Parapraph Text: Montserrat, Medium, 20 px, Line height 150%, #252528 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accum
+          </p>
+
+          <p class="text--light">
+            Body Paragraph Text: Proxima Nova, Regular, 18px, Line height 150%, Paragrahp spasing 20 px, #515153 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+          </p>
+
+          <p class="text--subtext">
+            Subext: Proxima Nova, Regular, 16 px, #97A0B2
+          </p>
+
+          <p class="text--subtext-light">
+            Subext: Montserrat, Medium, 15 px, #97A0B2
+          </p>
+
+          <br><br>
+
+          <div class="display-1">Links</div>
+
+          <br><br>
+
+          <div class="h4 text--smoke text--simple-weight">Default</div>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="link link--fat">Вернуться в раздел «Новости»</a>
+            </li>
+            <li>
+              <a href="#" class="link">ссылка в тексте новости</a>
+            </li>
+            <li>
+              <a href="#" class="link link--promo">Ссылка в результатах поиска</a>
+            </li>
+          </ul>
+
+          <br><br>
+
+          <ul class="list-style">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>
+              Placeat eveniet nihil earum harum!
+            </li>
+            <li>
+              Aliquid, harum cupiditate iste maxime.
+
+              <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Placeat eveniet nihil earum harum!</li>
+                <li>Aliquid, harum cupiditate iste maxime.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <br><br>
+
+          <div class="display-1">Card</div>
+
+          <br><br>
+          
+          <div class="" style="padding: 56px 58px; background-color: #303033;">
+            <a href="#" class="card">
+              <div class="card-body">
+                <h5 class="card-subtitle">4 февраля 2019</h5>
+                <p class="card-text">Нужно ли платить транспортный налог при перепродаже автомобиля в течение месяца</p>
+              </div>
+            </a>
+          </div>
+
+          <br><br>
+
+          <div class="display-1">Navigation</div>
+
+          <br><br>
+
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item"><a href="#">О компании</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Отзывы</li>
+            </ol>
+          </nav>
+
+          <br>
+
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link page-link--arrow" href="#">
+                  <svg class="image__direction">
+                    <use xlink:href="img/sprite-svg.svg#icon-previous"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link page-link--arrow" href="#">
+                  <svg class="image__direction">
+                    <use xlink:href="img/sprite-svg.svg#icon-next"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <br>
+
+          <div class="display-1">Search</div>
+
+          <div class="search">
+            <input type="text" class="search__input" placeholder="Поиск по сайту" class="">
+            <button class="search__btn">
+              <svg class="">
+                <use xlink:href="img/sprite-svg.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+        
+
+      </main>
+    </div>
+
+    @@include('blocks/page-footer/page-footer.html')
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

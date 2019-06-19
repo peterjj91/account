@@ -1,0 +1,63 @@
+// В этом файле должны быть стили для БЭМ-блока our-pluse, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.our-pluse {
+
+  $block-name: &; // #{$block-name}__element {}
+  display: flex;
+
+  &__main {
+    width: 430px;
+    flex: 0 0 430px;
+    // height: 300px;
+    margin-right: 84px;
+  }
+  &__content {
+    @include make-row;
+    padding-top: 16px;
+
+    p {
+      font-family: $proximaNova-regular;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 130%;
+      margin-bottom: 0;
+    }
+  }
+
+  &__block {
+    padding-top: 0px;
+    padding-right: 10px;
+    margin-bottom: 46px;
+
+    &:nth-child(1) {
+      @include make-col(3.6);
+    }
+    &:nth-child(2) {
+      @include make-col(4.9);
+    }
+    &:nth-child(3) {
+      @include make-col(3.4);
+    }
+    &:nth-child(4) {
+      @include make-col(3.6);
+    }
+    &:nth-child(5) {
+      @include make-col(4.9);
+    }
+    &:nth-child(6) {
+      @include make-col(3.4);
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 600;
+    color: $color-ocean;
+    line-height: 110%;
+    margin-bottom: 7px;
+  }
+
+  p {}
+}

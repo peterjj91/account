@@ -19,12 +19,20 @@
     "progress": [],
     "scrollspy": [],
     "tooltips": [],
-    "cards": [],
+    "card": [],
     "search": [],
     "toast": [],
     "slider": [],
     "image": [],
-    "select": []
+    "select": [],
+    "phone-promo": [],
+    "our-pluse": [],
+    "promo-block": [],
+    "trust-promo": [],
+    "start-work": [],
+    "team-promo": [],
+    "news": [],
+    "quote": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

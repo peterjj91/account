@@ -2,26 +2,168 @@
 // Не пишите тут какую-либо стороннюю стилизацию.
 
 body {
-  font-family: $font-family-sans-serif;
-  letter-spacing: 0.02em;
+  // font-family: $font-family-sans-serif;
+  min-width: 1300px;
 }
 
 .h1,h1 {
-
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 49px;
+  margin-bottom: 30px;
 }
 
 .h2,h2 {
-  
+  font-size: 30px;
+  font-weight: 600;
+  color: $color-space;
+  line-height: 37px;
+  margin-bottom: 30px;
 }
 
 .h3,h3 {
-  
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  color: $color-space;
+  margin-bottom: 27px;
 }
 
 .h4,h4 {
-  
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: $color-space;
+  margin-bottom: 24px;
 }
 
-.h5,h5 {
-  
+p, .text {
+  font-size: 20px;
+  color: $color-space;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
+
+.text {
+  &--light {
+    font-family: $proximaNova-regular;
+    font-size: 18px;
+    color: $color-light;
+  }
+  &--subtext {
+    font-family: $proximaNova-regular;
+    font-size: 16px;
+    color: $color-lighter;
+    margin-bottom: 15px;
+  }
+  &--subtext-light {
+    font-size: 15px;
+    font-weight: 500;
+    color: $color-lighter;
+    margin-bottom: 15px;
+  }
+
+  &--smoke {
+    color: $color-lighter;
+  }
+  &--simple-weight {
+    font-weight: normal;
+  }
+}
+
+a, .link {
+  font-family: $proximaNova-regular;
+  font-size: 18px;
+  color: $color-ocean;
+  text-decoration-line: underline;
+
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $color-ocean;
+  }
+}
+
+.link {
+  &--fat {
+    font-family: $montserrat;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+  &--promo {
+    font-family: $montserrat;
+    font-size: 17px;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.list-style, ul {
+  font-weight: 500;
+  font-size: 15px;
+  color: $color-space;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  line-height: 140%;
+}
+
+.list-style {
+  li {
+    padding-left: 15px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $color-ocean;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    font-family: $proximaNova-regular;
+    font-size: 16px;
+    color: $color-light;
+    margin-top: 9px;
+    margin-bottom: 19px;
+    line-height: 110%;
+
+    li {
+      margin-bottom: 9px;
+
+      &:before {
+        width: 4px;
+        height: 4px;
+        background-color: $color-lighter;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.list-unstyled {
+  padding: 0;
+
+  li {
+    &:before {
+      display: none;
+    }
+  }
+}
+

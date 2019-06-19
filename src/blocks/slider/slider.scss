@@ -5,5 +5,138 @@
 .slider {
 
   $block-name: &; // #{$block-name}__element {}
+  margin-bottom: 108px;
 
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+  }
+  
+  &__content {
+    .list-style {
+      font-size: 20px;
+      line-height: 130%;
+      margin-bottom: 40px;
+
+      li {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &__img {
+
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    height: 37px;
+    margin-top: 89px;
+  }
+
+  &__arrow {
+    width: 40px;
+    height: 15px;
+  }
+
+  &__dots {
+    margin: 0px 30px;
+
+    .slick-dots {
+      margin: 0;
+      display: flex;
+      align-items: baseline;
+
+      li {
+        margin-right: 30px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &.slick-active {
+          button {
+            font-size: 28px;
+          }
+        }
+
+        button {
+          background-color: transparent;
+          padding: 0;
+          border: none;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 34px;
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: $color-lighter;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .slick-slide {
+    &[aria-describedby="slick-slide-control00"] {
+      .slick-dots {
+        li:nth-child(1) {
+          button {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+    &[aria-describedby="slick-slide-control01"] {
+      .slick-dots {
+        li:nth-child(2) {
+          button {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+    &[aria-describedby="slick-slide-control02"] {
+      .slick-dots {
+        li:nth-child(3) {
+          button {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+    &[aria-describedby="slick-slide-control03"] {
+      .slick-dots {
+        li:nth-child(4) {
+          button {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+    &[aria-describedby="slick-slide-control04"] {
+      .slick-dots {
+        li:nth-child(5) {
+          button {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+    &[aria-describedby="slick-slide-control05"] {
+      .slick-dots {
+        li:nth-child(6) {
+          button {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
 }

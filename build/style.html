@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Стили</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link href="css/style.min.css?1" rel="stylesheet" media="screen">
+
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    var ua = window.navigator.userAgent.toLowerCase(),
+    isIE = (/trident/gi).test(ua) || (/msie/gi).test(ua);
+    if(isIE) document.documentElement.classList.add('ie');
+  </script>
+
+  <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+
+</head>
+
+<body>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <div class="page-header__inner">
+
+          <div class="container">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="#">
+                <img src="img/logo.svg" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Услуги</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Цены</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">О компании</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Новости</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                  </li>
+                </ul>
+                <div class="my-2 my-lg-0">
+                  <div class="phone-promo">
+                    <svg class="phone-promo__img">
+                      <use xlink:href="img/sprite-svg.svg#call"></use>
+                    </svg>
+
+                    <div class="phone-promo__description">
+                      <a href="tel:84957237049" class="phone-promo__number">8 (495) 723-70-49</a>
+                      <div class="phone-promo__recall">Перезвоните мне</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+        </div>
+      </header>
+
+
+      <main class="page__main-content" role="main">
+
+        <div class="container">
+          
+          <div class="display-1">Typography</div>
+
+          <br><br>
+
+          <h1 class="h1">H1: Montserrat, SemiBold, 40 px, #252528</h1>
+          <h2 class="h2">H2: Montserrat, SemiBold, 30 px, #252528</h1>
+          <h3 class="h3">H3: Montserrat, SemiBold, 22 px, #252528</h1>
+          <h4 class="h4">H4: Proxima Nova, Semibold, 20 px, #252528</h1>
+
+          <p class="text">
+            Parapraph Text: Montserrat, Medium, 20 px, Line height 150%, #252528 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accum
+          </p>
+
+          <p class="text--light">
+            Body Paragraph Text: Proxima Nova, Regular, 18px, Line height 150%, Paragrahp spasing 20 px, #515153 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+          </p>
+
+          <p class="text--subtext">
+            Subext: Proxima Nova, Regular, 16 px, #97A0B2
+          </p>
+
+          <p class="text--subtext-light">
+            Subext: Montserrat, Medium, 15 px, #97A0B2
+          </p>
+
+          <br><br>
+
+          <div class="display-1">Links</div>
+
+          <br><br>
+
+          <div class="h4 text--smoke text--simple-weight">Default</div>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="link link--fat">Вернуться в раздел «Новости»</a>
+            </li>
+            <li>
+              <a href="#" class="link">ссылка в тексте новости</a>
+            </li>
+            <li>
+              <a href="#" class="link link--promo">Ссылка в результатах поиска</a>
+            </li>
+          </ul>
+
+          <br><br>
+
+          <ul class="list-style">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>
+              Placeat eveniet nihil earum harum!
+            </li>
+            <li>
+              Aliquid, harum cupiditate iste maxime.
+
+              <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Placeat eveniet nihil earum harum!</li>
+                <li>Aliquid, harum cupiditate iste maxime.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <br><br>
+
+          <div class="display-1">Card</div>
+
+          <br><br>
+          
+          <div class="" style="padding: 56px 58px; background-color: #303033;">
+            <a href="#" class="card">
+              <div class="card-body">
+                <h5 class="card-subtitle">4 февраля 2019</h5>
+                <p class="card-text">Нужно ли платить транспортный налог при перепродаже автомобиля в течение месяца</p>
+              </div>
+            </a>
+          </div>
+
+          <br><br>
+
+          <div class="display-1">Navigation</div>
+
+          <br><br>
+
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item"><a href="#">О компании</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Отзывы</li>
+            </ol>
+          </nav>
+
+          <br>
+
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link page-link--arrow" href="#">
+                  <svg class="image__direction">
+                    <use xlink:href="img/sprite-svg.svg#icon-previous"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link page-link--arrow" href="#">
+                  <svg class="image__direction">
+                    <use xlink:href="img/sprite-svg.svg#icon-next"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <br>
+
+          <div class="display-1">Search</div>
+
+          <div class="search">
+            <input type="text" class="search__input" placeholder="Поиск по сайту" class="">
+            <button class="search__btn">
+              <svg class="">
+                <use xlink:href="img/sprite-svg.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+        
+
+      </main>
+    </div>
+
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__inner">
+          <div class="container">
+            <div class="page-footer__nav">
+              <div class="page-footer__nav__block">
+                <div class="h3 page-footer__nav__title">О нас</div>
+
+                <ul class="page-footer__nav__ul">
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Цены</a></li>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Клиенты</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__nav__block">
+                <div class="h3 page-footer__nav__title">Информация</div>
+
+                <ul class="page-footer__nav__ul">
+                  <li><a href="#">Публичная оферта</a></li>
+                  <li><a href="#">Политика конфиденциальности</a></li>
+                  <li><a href="#">Пользовательское соглашение</a></li>
+                  <li><a href="#">Положение об ответственности</a></li>
+                  <li><a href="#">Памятка Клиенту</a></li>
+                  <li><a href="#">Страховой полис</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__nav__block">
+                <div class="h3 page-footer__nav__title">Полезные ресурсы</div>
+
+                <ul class="page-footer__nav__ul">
+                  <li><a href="#">Банк Уралсиб</a></li>
+                  <li><a href="#">Интерлизинг</a></li>
+                  <li><a href="#">Банк НФК (АО)</a></li>
+                  <li><a href="#">Уралсиб Страхование</a></li>
+                  <li><a href="#">Уралсиб Private Bank</a></li>
+                  <li><a href="#">АО «УК Уралсиб»</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__nav__block page-footer__nav__block--info">
+                <div class="h3 page-footer__nav__title">Свяжитесь с нами</div>
+                <p>OOO «Центр бухгалтерских услуг»</p>
+                <p>Центральный офис в Москве</p>
+                <p>142784, г. Москва, поселение Московский,  22-ой км. Киевского шоссе, домовладение 4, стр. 5, пом. 8-103-2.</p>
+                <div class="page-footer__contact">
+                  <a href="tel:84957237049" class="page-footer__contact__tel">8 (495) 723-70-49</a>
+                  <a href="mailto:info@cbu-online.ru" class="page-footer__contact__email">info@cbu-online.ru </a>
+                </div>
+
+                <div class="page-footer__search">
+                  <div class="search">
+                    <input type="text" class="search__input">
+                    <button class="search__btn">
+                      <img src="img/search.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page-footer__bottom">
+              <p>© 2019, OOO «Центр бухгалтерских услуг»</p>
+              <p>Сайт разработан в RITG</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/script.min.js?1"></script>
+
+</body>
+</html>

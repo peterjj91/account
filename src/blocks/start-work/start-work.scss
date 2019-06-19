@@ -1,0 +1,60 @@
+// В этом файле должны быть стили для БЭМ-блока start-work, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.start-work {
+
+  $block-name: &; // #{$block-name}__element {}
+  padding: 150px 0px 146px 0px;
+  text-align: center;
+  background-color: $color-space;
+  color: white;
+
+  &__title, .h2, .h3 {
+    color: white;
+    margin-bottom: 90px;
+  }
+
+  p {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    margin: 0;
+  }
+
+  &__step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 86px;
+
+    &__block {
+      display: flex;
+      // width: 330px;
+      width: 33%;
+      text-align: left;
+      align-items: center;
+      margin-right: 40px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__icon {
+      width: 89px;
+      flex: 0 0 80px;
+      margin-right: 33px;
+    }
+
+    &__description {
+
+    }
+  }
+
+  &__active {
+    .btn {
+      min-width: 300px;
+    }
+  }
+}

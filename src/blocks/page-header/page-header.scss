@@ -5,12 +5,13 @@
 .page-header {
 
   $block-name: &;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // z-index: 10;
   background-color: #fff;
+  padding: 27px 0px 27px 0px;
 
   @include media-breakpoint-up(xs) {
   }
@@ -42,5 +43,9 @@
     @include media-breakpoint-up(xl) {
       padding-left: 0;
     }
+  }
+
+  .phone-promo {
+    margin-right: 19px;
   }
 }

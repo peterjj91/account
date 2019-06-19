@@ -1,9 +1,15 @@
-// В этом файле должны быть стили для БЭМ-блока cards, его элементов, 
+// В этом файле должны быть стили для БЭМ-блока trust-promo, его элементов, 
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.cards {
+.trust-promo {
 
   $block-name: &; // #{$block-name}__element {}
+  @include make-row;
 
+  &__block {
+    @include make-col(4);
+    padding: 0px 15px;
+    margin-bottom: 30px;
+  }
 }

@@ -1,11 +1,27 @@
-  
+// font
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap&subset=cyrillic');
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: local('☺'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$montserrat: 'Montserrat', sans-serif;
+$proximaNova-regular: 'ProximaNova-Regular';
+
+$font-family-sans-serif: $montserrat;
+
 // Your variable overrides
 $body-bg: #000;
 $body-color: #111;
 
 $theme-colors: (
-  "primary": #0074d9,
-  "danger": #ff4136
+  "primary": #6CA3CB,
+  "danger": #ff4136,
+  "dark": #252528
   // "secondary": 
 );
 
@@ -26,23 +42,14 @@ $grid-breakpoints: (
 );
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 1220px
 );
 
-$font-family-sans-serif:
-  // Safari for macOS and iOS (San Francisco)
-  -apple-system,
-  // Chrome < 56 for macOS (San Francisco)
-  BlinkMacSystemFont,
-  // Windows
-  "Segoe UI";
-
 :root {
-  --haha: #007bff;
-  // --indigo: #6610f2;
+  --haha: #007bff
 }
 
 // color: var(--blue);
@@ -74,6 +81,21 @@ $font-family-sans-serif:
 
 // Get fancy by offsetting, or changing the sort order
 // @include make-col-offset($size, $columns: $grid-columns);
+
+// color
+$color-dark: #787E8D;
+$color-darkness: #303033;
+$color-dust: #3A3B40;
+$color-space: #252528;
+$color-light: #515153;
+$color-lighter: #97A0B2;
+$color-ocean: #6CA3CB;
+$color-river: #EDF4F8;
+$color-shadow: #EAECF0;
+
+
+// breadcrumb
+$breadcrumb-divider: quote("/");
 
 
 // select bootstrap

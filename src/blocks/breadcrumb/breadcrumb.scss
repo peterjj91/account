@@ -5,5 +5,32 @@
 .breadcrumb {
 
   $block-name: &; // #{$block-name}__element {}
+  padding: 0;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 500;
+  color: $color-ocean;
 
+  li {
+    a {
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+
+  &-item {
+    &.active {
+      color: $color-lighter;
+    }
+  }
+
+  &-item + &-item {
+    padding-left: 4px;
+
+    &:before {
+      color: $color-ocean;
+      font-size: 14px;
+      padding-right: 4px;
+    }
+  }
 }

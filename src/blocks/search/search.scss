@@ -5,5 +5,35 @@
 .search {
 
   $block-name: &; // #{$block-name}__element {}
+  position: relative;
 
+  &__input {
+    height: 44px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: #303136;
+    color: $color-lighter;
+    transform: rotate(0.34deg);
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    padding: 0px 60px 0px 22px;
+  }
+
+  &__btn {
+    position: absolute;
+    transform: translate(0%, -50%);
+    right: 20px;
+    top: 50%;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+    img {
+      width: 14px;
+      // height: 14px;
+    }
+  }
 }

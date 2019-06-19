@@ -5,5 +5,77 @@
 .pagination {
 
   $block-name: &; // #{$block-name}__element {}
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
 
+  .page-item {
+    margin-right: 1px;
+
+    &:first-child {
+      .page-link--arrow {
+        margin-right: 15px;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      .page-link--arrow {
+        margin-left: 15px;
+      }
+    }
+
+    &.active {
+      .page-link {
+        color: $color-lighter;
+        background-color: transparent;
+
+        &:hover, &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  
+  &-link {
+    border: none;
+    display: flex;
+    height: 40px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: $color-ocean;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+      background-color: transparent;
+    }
+
+    &--arrow {
+      min-width: 40px;
+      text-align: center;
+      background-color: $color-shadow;
+      padding: 0;
+
+      svg {
+        fill: transparent;
+        stroke: #9B9CA0;
+      }
+
+      &:hover {
+        background-color: $color-ocean;
+
+        svg {
+          fill: $color-ocean;
+          stroke: white;
+        }
+      }
+    }
+  }
 }

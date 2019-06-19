@@ -1,0 +1,32 @@
+// В этом файле должны быть стили для БЭМ-блока quote, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.quote {
+
+  $block-name: &; // #{$block-name}__element {}
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  position: relative;
+  color: $color-space;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -38px;
+    display: inline-block;
+    background-image: url(../img/quote-left.png);
+    width: 27.78px;
+    height: 23.22px;
+  }
+  &:after {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/quote-right.png);
+    width: 27.78px;
+    height: 23.22px;
+    margin-bottom: -5px;
+  }
+}

@@ -1,7 +1,8 @@
 .page-footer {
 
   $block-name: &;
-  padding: 20px 15px 15px 15px;
+  background-color: $color-space;
+  padding: 70px 0px 20px 0px;
 
   @include media-breakpoint-up(xs) {
   }
@@ -28,6 +29,99 @@
     @include media-breakpoint-up(lg) {
     }
     @include media-breakpoint-up(xl) {
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 39px;
+
+    &__block {
+      // width: 30%;
+
+      &--info {
+        width: 28%;
+      }
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 23px;
+    }
+
+    &__title, .h2, .h3, .h4 {
+      color: white;
+    }
+
+    &__ul {
+      margin-bottom: 0;
+      
+      li {
+        margin-bottom: 12px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      a {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 18px;
+        color: white;
+        text-decoration: none;
+        color: $color-ocean !important;
+
+        &:hover, &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      color: white;
+      margin-bottom: 19px;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 22px 40px 0px;
+
+    &__tel {
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 18px;
+      text-decoration: none;
+      color: white;
+    }
+    &__email {
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 18px;
+      text-decoration: underline;
+      color: $color-ocean;
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba(151, 160, 178, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0px 0px 0px;
+
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      margin: 0;
+      color: rgba(255,255,255, 0.5);
     }
   }
 }

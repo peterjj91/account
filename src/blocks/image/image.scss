@@ -6,4 +6,11 @@
 
   $block-name: &; // #{$block-name}__element {}
 
+  &__direction {
+    width: 8px;
+    height: 13px;
+    stroke: #9B9CA0;
+    stroke-width: 1.5;
+    fill: transparent;
+  }
 }
