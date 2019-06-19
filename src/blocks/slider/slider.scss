@@ -7,11 +7,15 @@
   $block-name: &; // #{$block-name}__element {}
   margin-bottom: 108px;
 
+  &__wrapper {
+    position: relative;
+  }
+
   &__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    outline: none;
+    outline: none !important;
   }
   
   &__content {
@@ -39,11 +43,18 @@
     align-items: center;
     height: 37px;
     margin-top: 89px;
+
+    &--main {
+      position: absolute;
+      left: 0px;
+      bottom: 90px;
+    }
   }
 
   &__arrow {
     width: 40px;
     height: 15px;
+    cursor: pointer;
   }
 
   &__dots {
@@ -84,6 +95,8 @@
   }
 
   .slick-slide {
+    outline: none !important;
+
     &[aria-describedby="slick-slide-control00"] {
       .slick-dots {
         li:nth-child(1) {

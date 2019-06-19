@@ -13,12 +13,12 @@
   
 
   &:hover {
-    background-color: $primary;
+    background-color: $color-ocean;
     cursor: pointer;
 
     #{$block-name} {
       &-text {
-        text-decoration: underline;
+        // text-decoration: underline;
       }
     }
   }

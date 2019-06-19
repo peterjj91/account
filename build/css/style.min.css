@@ -5200,10 +5200,8 @@ a:hover, a:focus, .link:hover, .link:focus {
   text-decoration: none;
   position: relative; }
 .card:hover {
-    background-color: #007bff;
+    background-color: #6CA3CB;
     cursor: pointer; }
-.card:hover .card-text {
-      text-decoration: underline; }
 .card-body {
     padding: 34px 30px 46px 30px;
     color: white; }
@@ -5280,6 +5278,8 @@ a:hover, a:focus, .link:hover, .link:focus {
       width: 14px; }
 .slider {
   margin-bottom: 108px; }
+.slider__wrapper {
+    position: relative; }
 .slider__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5290,7 +5290,7 @@ a:hover, a:focus, .link:hover, .link:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    outline: none; }
+    outline: none !important; }
 .slider__content .list-style {
     font-size: 20px;
     line-height: 130%;
@@ -5308,9 +5308,14 @@ a:hover, a:focus, .link:hover, .link:focus {
             align-items: center;
     height: 37px;
     margin-top: 89px; }
+.slider__nav--main {
+      position: absolute;
+      left: 0px;
+      bottom: 90px; }
 .slider__arrow {
     width: 40px;
-    height: 15px; }
+    height: 15px;
+    cursor: pointer; }
 .slider__dots {
     margin: 0px 30px; }
 .slider__dots .slick-dots {
@@ -5338,18 +5343,20 @@ a:hover, a:focus, .link:hover, .link:focus {
           letter-spacing: 0.01em;
           color: #97A0B2;
           outline: none; }
+.slider .slick-slide {
+    outline: none !important; }
 .slider .slick-slide[aria-describedby="slick-slide-control00"] .slick-dots li:nth-child(1) button {
-    font-size: 28px; }
+      font-size: 28px; }
 .slider .slick-slide[aria-describedby="slick-slide-control01"] .slick-dots li:nth-child(2) button {
-    font-size: 28px; }
+      font-size: 28px; }
 .slider .slick-slide[aria-describedby="slick-slide-control02"] .slick-dots li:nth-child(3) button {
-    font-size: 28px; }
+      font-size: 28px; }
 .slider .slick-slide[aria-describedby="slick-slide-control03"] .slick-dots li:nth-child(4) button {
-    font-size: 28px; }
+      font-size: 28px; }
 .slider .slick-slide[aria-describedby="slick-slide-control04"] .slick-dots li:nth-child(5) button {
-    font-size: 28px; }
+      font-size: 28px; }
 .slider .slick-slide[aria-describedby="slick-slide-control05"] .slick-dots li:nth-child(6) button {
-    font-size: 28px; }
+      font-size: 28px; }
 .image__direction {
   width: 8px;
   height: 13px;
