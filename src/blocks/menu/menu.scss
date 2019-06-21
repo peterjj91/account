@@ -1,0 +1,32 @@
+// В этом файле должны быть стили для БЭМ-блока menu, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.menu {
+
+  $block-name: &; // #{$block-name}__element {}
+  display: none;
+  background-color: #252429;
+  text-align: center;
+  width: 320px;
+  padding: 33px 20px;
+  // z-index: 10;
+
+  .hamburger {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+
+  &__logo {
+    margin-bottom: 37px;
+  }
+
+  &__nav {
+    margin-bottom: 33px;
+  }
+
+  &__bottom {
+
+  }
+}

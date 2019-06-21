@@ -6,27 +6,49 @@
 
   $block-name: &; // #{$block-name}__element {}
   font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 15px;
+  line-height: 160%;
   position: relative;
   color: $color-space;
 
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &:before, &:after {
+    width: 22px;
+    height: 19.22px;
+    background-size: contain;
+    background-position: center;
+
+    @include media-breakpoint-up(md) {
+      width: 27.78px;
+      height: 23.22px;
+    }
+  }
+
   &:before {
     content: "";
-    position: absolute;
-    top: 0px;
-    left: -38px;
     display: inline-block;
     background-image: url(../img/quote-left.png);
-    width: 27.78px;
-    height: 23.22px;
+    width: 22px;
+    height: 19.22px;
+    margin-bottom: -5px;
+    margin-left: -44px;
+
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      top: 0px;
+      left: -38px;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
   }
   &:after {
     content: "";
     display: inline-block;
     background-image: url(../img/quote-right.png);
-    width: 27.78px;
-    height: 23.22px;
     margin-bottom: -5px;
   }
 }

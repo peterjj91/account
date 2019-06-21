@@ -7,19 +7,23 @@
   $block-name: &;
   // position: fixed;
   // top: 0;
-  // left: 0;
-  // right: 0;
-  // z-index: 10;
+  // width: 100%;
+  // z-index: 2;
   background-color: #fff;
-  padding: 27px 0px 27px 0px;
+  padding: 7px 0px 7px 0px;
+  margin-bottom: 51px;
 
   @include media-breakpoint-up(xs) {
   }
   @include media-breakpoint-up(sm) {
   }
   @include media-breakpoint-up(md) {
+
   }
   @include media-breakpoint-up(lg) {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-bottom: 0;
   }
   @include media-breakpoint-up(xl) {
   }
@@ -47,5 +51,15 @@
 
   .phone-promo {
     margin-right: 19px;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
   }
 }

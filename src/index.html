@@ -9,14 +9,16 @@
 </head>
 
 <body>
-  <div class="page__inner">
-    <div class="page__content">
-      @@include('blocks/page-header/page-header.html')
+  @@include('blocks/slideout/slideout.html')
 
+  <div class="page__inner" id="main">
+    @@include('blocks/page-header/page-header.html')
+    
+    <div class="page__content">
       <main class="page__main-content" role="main">
 
         <div class="container">
-          <div class="slider__wrapper">
+          <div class="slider__wrapper" data-slideout-ignore>
             <div class="slider">
               <div>
                 <div class="slider__item">
@@ -29,13 +31,15 @@
                       <li>Оформим сотрудников и рассчитаем</li>
                     </ul>
                     
-                    <a href="#" class="btn btn-primary">Подробнее о наших услугах</a>
+                    <div class="slider__btn">
+                      <a href="#" class="btn btn-primary">Подробнее о наших услугах</a>
+                    </div>
 
                     <div class="slider__nav">
                       <svg class="slider__arrow slider__arrow--prev">
                         <use xlink:href="img/sprite-svg.svg#arrow-left"></use>
                       </svg>
-                      <ul class="slider__dots"></ul>
+                      <div class="slider__dots"></div>
                       <svg class="slider__arrow slider__arrow--next">
                         <use xlink:href="img/sprite-svg.svg#arrow-right"></use>
                       </svg>
@@ -57,13 +61,15 @@
                       <li>Дадим советы по юридическим и налоговым вопросам</li>
                     </ul>
                     
-                    <a href="#" class="btn btn-primary">Подробнее о наших услугах</a>
+                    <div class="slider__btn">
+                      <a href="#" class="btn btn-primary">Подробнее о наших услугах</a>
+                    </div>
 
                     <div class="slider__nav">
                       <svg class="slider__arrow slider__arrow--prev">
                         <use xlink:href="img/sprite-svg.svg#arrow-left"></use>
                       </svg>
-                      <ul class="slider__dots"></ul>
+                      <div class="slider__dots"></div>
                       <svg class="slider__arrow slider__arrow--next">
                         <use xlink:href="img/sprite-svg.svg#arrow-right"></use>
                       </svg>
@@ -85,13 +91,15 @@
                       <li>Возьмем на себя решение текущих вопросов</li>
                     </ul>
                     
-                    <a href="#" class="btn btn-primary">Подробнее о наших услугах</a>
+                    <div class="slider__btn">
+                      <a href="#" class="btn btn-primary">Подробнее о наших услугах</a>
+                    </div>
 
                     <div class="slider__nav">
                       <svg class="slider__arrow slider__arrow--prev">
                         <use xlink:href="img/sprite-svg.svg#arrow-left"></use>
                       </svg>
-                      <ul class="slider__dots"></ul>
+                      <div class="slider__dots"></div>
                       <svg class="slider__arrow slider__arrow--next">
                         <use xlink:href="img/sprite-svg.svg#arrow-right"></use>
                       </svg>
@@ -113,13 +121,15 @@
                       <li>Мы не допустим ошибок, не заболеем и не уйдем в отпуск</li>
                     </ul>
                     
-                    <a href="#" class="btn btn-primary">Подробнее о наших услугах</a>
+                    <div class="slider__btn">
+                      <a href="#" class="btn btn-primary">Подробнее о наших услугах</a>
+                    </div>
 
                     <div class="slider__nav">
                       <svg class="slider__arrow slider__arrow--prev">
                         <use xlink:href="img/sprite-svg.svg#arrow-left"></use>
                       </svg>
-                      <ul class="slider__dots"></ul>
+                      <div class="slider__dots"></div>
                       <svg class="slider__arrow slider__arrow--next">
                         <use xlink:href="img/sprite-svg.svg#arrow-right"></use>
                       </svg>
@@ -152,9 +162,7 @@
                   <div class="card-body">
                     <p class="card-text">Мы - команда профессионалов, применяем в работе современные решения автоматизации бухгалтерского учета.</p>
 
-                    <svg class="card__icon" style="width: 90px;height: 90px;">
-                      <use xlink:href="img/sprite-svg.svg#doc"></use>
-                    </svg>
+                    <img src="img/doc.svg" class="card__icon" alt="">
                   </div>
                 </div>
               </div>
@@ -163,7 +171,7 @@
                   <div class="our-pluse__title">14 лет на рынке</div>
                   <p>бухгалтерских у слуг</p>
                 </div>
-                <div class="our-pluse__block col-md-auto">
+                <div class="our-pluse__block">
                   <div class="our-pluse__title">более 60 клиентов</div>
                   <p>уже оценили преимущества сотрудничества с нами</p>
                 </div>
@@ -192,7 +200,7 @@
                   <div class="card-body">
                     <p class="card-text">Лизинговая компания «Интерлизинг»</p>
 
-                    <img src="img/client_logo_1.png" class="card__icon" alt="">
+                    <img src="img/client_logo_1.png" class="card__icon card__icon--img1" alt="">
                   </div>
                 </div>
               </div>
@@ -201,7 +209,7 @@
                   <div class="card-body">
                     <p class="card-text">Управляющая компания «Уралсиб»</p>
 
-                    <img src="img/client_logo_2.png" class="card__icon" alt="">
+                    <img src="img/client_logo_2.png" class="card__icon card__icon--img2" alt="">
                   </div>
                 </div>
               </div>
@@ -210,7 +218,7 @@
                   <div class="card-body">
                     <p class="card-text">Группа компаний «Знак»</p>
 
-                    <img src="img/client_logo_3.png" class="card__icon" alt="">
+                    <img src="img/client_logo_3.png" class="card__icon card__icon--img3" alt="">
                   </div>
                 </div>
               </div>
@@ -219,7 +227,7 @@
                   <div class="card-body">
                     <p class="card-text">Брокерская компания «БФА»</p>
 
-                    <img src="img/client_logo_4.png" class="card__icon" alt="">
+                    <img src="img/client_logo_4.png" class="card__icon card__icon--img4" alt="">
                   </div>
                 </div>
               </div>
@@ -228,10 +236,14 @@
                   <div class="card-body">
                     <p class="card-text">Группа компаний «НФК»</p>
 
-                    <img src="img/client_logo_5.png" class="card__icon" alt="">
+                    <img src="img/client_logo_5.png" class="card__icon card__icon--img5" alt="">
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div class="trust-promo__more">
+              <a href="#">Все клиенты</a>
             </div>
           </div>
         </div>
@@ -279,17 +291,15 @@
         <div class="team-promo">
           <div class="container">
             <div class="h2 team-promo__title">Наша команда</div>
-
-            <div class="row">
-              <div class="col-4">
+            
+            <div class="team-promo__row">
+              <div class="team-promo__quote">
                 <div class="quote">
                   Залог успеха компании - квалифицированный персонал с большим опытом работы.
                 </div>
               </div>
-              <div class="col-8">
-                <div class="team-promo__content">
-                  <p>Наши сотрудники - молодые и энергичные специалисты, обладающие многолетним опытом и знаниями в области бухгалтерского, налогового и кадрового учета, с подтвержденной квалификацией аудиторов и профессиональных бухгалтеров, с аттестатами АССА и ФСФР.</p>
-                </div>
+              <div class="team-promo__content">
+                <p>Наши сотрудники - молодые и энергичные специалисты, обладающие многолетним опытом и знаниями в области бухгалтерского, налогового и кадрового учета, с подтвержденной квалификацией аудиторов и профессиональных бухгалтеров, с аттестатами АССА и ФСФР.</p>
               </div>
             </div>
 
@@ -356,6 +366,10 @@
                   </div>
                 </a>
               </div>
+            </div>
+
+            <div class="news__more">
+              <a href="#">Смотреть все новости</a>
             </div>
           </div>
         </div>

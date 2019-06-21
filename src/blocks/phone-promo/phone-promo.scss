@@ -11,12 +11,16 @@
 
   &__img {
     margin-right: 16px;
-    width: 30px;
+    flex: 0 0 31px;
+    width: 31px;
     height: 36px;
   }
 
   &__description {
-
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
   }
 
   &__number {
@@ -38,5 +42,25 @@
     letter-spacing: 0.2px;
     line-height: 18px;
     cursor: pointer;
+    text-decoration: none;
+  }
+
+  &--mobile {
+    text-align: center;
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    #{$block-name} {
+      &__number {
+        color: white;
+        font-size: 19px;
+      }
+      &__recall {
+        font-size: 17px;
+        // color: $color-ocean;
+      }
+    }
   }
 }

@@ -8,14 +8,33 @@
   padding: 0px 0px 0px 0px;
 
   &-brand {
-    margin-right: 90px;
+    @include media-breakpoint-up(xl) {
+      margin-right: 90px;
+    }
+
+    img, svg {
+      height: 60px;
+      
+      @include media-breakpoint-up(xl) {
+        height: auto;
+      }
+    }
   }
 
   &-nav {
     font-size: 16px;
+    margin-right: 20px;
+
+    @include media-breakpoint-up(xl) {
+      margin-right: auto !important;
+    }
 
     li {
-      margin-right: 30px;
+      margin-right: 15px;
+
+      @include media-breakpoint-up(xl) {
+        margin-right: 30px;
+      }
 
       &:last-child {
         margin-right: 0px;
@@ -26,6 +45,36 @@
       color: $dark;
       font-weight: 600;
       text-decoration: none;
+    }
+
+    &--mobile {
+      li {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 9px;
+      }
+
+      .nav-link {
+        color: white;
+      }
+
+      #{$block-name} {
+
+      }
+    }
+  }
+
+  &-expand-lg {
+    #{$block-name} {
+      &-collapse {
+        justify-content: flex-end;
+        display: none !important;
+        
+        @include media-breakpoint-up(xl) {
+          display: flex !important;
+          // justify-content: flex-end;
+        }
+      }
     }
   }
 }

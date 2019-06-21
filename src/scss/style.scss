@@ -10,6 +10,7 @@
 @import './node_modules/bootstrap/scss/bootstrap.scss';
 @import './node_modules/bootstrap-select/sass/bootstrap-select.scss';
 @import './node_modules/slick-carousel/slick/slick.scss';
+@import './src/blocks/default/default.scss';
 @import './src/blocks/page/page.scss';
 @import './src/blocks/typo/typo.scss';
 @import './src/blocks/page-header/page-header.scss';
@@ -43,3 +44,6 @@
 @import './src/blocks/team-promo/team-promo.scss';
 @import './src/blocks/news/news.scss';
 @import './src/blocks/quote/quote.scss';
+@import './src/blocks/slideout/slideout.scss';
+@import './src/blocks/menu/menu.scss';
+@import './src/blocks/hamburger/hamburger.scss';

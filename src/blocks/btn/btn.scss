@@ -17,8 +17,12 @@
     border-radius: 60px;
     color: white;
     letter-spacing: -0.01em;
-    padding: 20px 53px 19px 52px;
+    padding: 21px 20px 19px 20px;
     letter-spacing: 1.1px;
+
+    @include media-breakpoint-up(md) {
+      padding: 20px 53px 20px 52px;
+    }
 
     &:hover, &:focus {
       color: white;

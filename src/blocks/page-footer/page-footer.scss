@@ -2,13 +2,15 @@
 
   $block-name: &;
   background-color: $color-space;
-  padding: 70px 0px 20px 0px;
+  padding: 53px 0px 20px 0px;
 
   @include media-breakpoint-up(xs) {
   }
   @include media-breakpoint-up(sm) {
   }
   @include media-breakpoint-up(md) {
+    padding-top: 70px;
+    padding-bottom: 23px;
   }
   @include media-breakpoint-up(lg) {
   }
@@ -32,23 +34,57 @@
     }
   }
 
+  .container {
+    @include media-breakpoint-up(md) {
+      
+    }
+  }
+
   &__nav {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 39px;
+    flex-direction: column-reverse;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    
+    @include media-breakpoint-up(md) {
+      
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 0;
+      padding-right: 0px;
+      padding-bottom: 39px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
     &__block {
-      // width: 30%;
+      margin-bottom: 35px;
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0px;
+      }
 
       &--info {
-        width: 28%;
+        margin-bottom: 51px;
+
+        @include media-breakpoint-up(lg) {
+          margin-bottom: 0;
+          width: 28%;
+        }
       }
     }
 
     &__title {
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 17px;
+      line-height: 21px;
       margin-bottom: 23px;
+      
+      @include media-breakpoint-up(lg) {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 25px;
+      }
     }
 
     &__title, .h2, .h3, .h4 {
@@ -59,7 +95,11 @@
       margin-bottom: 0;
       
       li {
-        margin-bottom: 12px;
+        margin-bottom: 17px;
+
+        @include media-breakpoint-up(lg) {
+          margin-bottom: 12px;
+        }
 
         &:last-child {
           margin-bottom: 0;
@@ -67,12 +107,17 @@
       }
 
       a {
+        font-family: $montserrat;
         font-weight: 600;
-        font-size: 17px;
+        font-size: 15px;
         line-height: 18px;
         color: white;
         text-decoration: none;
         color: $color-ocean !important;
+
+        @include media-breakpoint-up(lg) {
+          font-size: 15px;
+        }
 
         &:hover, &:focus {
           text-decoration: underline;
@@ -81,47 +126,92 @@
     }
 
     p {
-      font-weight: 600;
-      font-size: 15px;
-      line-height: 18px;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 130%;
       color: white;
       margin-bottom: 19px;
+      
+      @include media-breakpoint-up(md) {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+      }
     }
   }
 
   &__contact {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 22px 40px 0px;
+    margin: 45px 22px 40px 0px;
+
+    @include media-breakpoint-up(md) {
+      
+      margin-top: 40px;
+      margin-right: 0;
+    }
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      justify-content: space-between;
+    }
 
     &__tel {
+      font-family: $montserrat;
       font-weight: bold;
       font-size: 17px;
-      line-height: 18px;
+      line-height: 21px;
       text-decoration: none;
       color: white;
+      display: block;
+      margin-bottom: 8px;
+      white-space: nowrap;
+
+      @include media-breakpoint-up(md) {
+        line-height: 18px;
+        margin-bottom: 8px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 0;
+      }
     }
     &__email {
+      font-family: $montserrat;
+      font-size: 15px;
       font-weight: bold;
-      font-size: 17px;
       line-height: 18px;
       text-decoration: underline;
       color: $color-ocean;
+      display: block;
+      white-space: nowrap;
+
+      @include media-breakpoint-up(md) {
+        font-size: 17px;
+        display: inline-block;
+      }
     }
   }
 
   &__bottom {
     border-top: 1px solid rgba(151, 160, 178, 1);
-    display: flex;
-    justify-content: space-between;
-    padding: 32px 0px 0px 0px;
+    padding-top: 20px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 32px;
+    }
 
     p {
       font-weight: 500;
-      font-size: 14px;
-      line-height: 17px;
-      margin: 0;
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 10px;
       color: rgba(255,255,255, 0.5);
+
+      @include media-breakpoint-up(lg) {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 0;
+      }
     }
   }
 }

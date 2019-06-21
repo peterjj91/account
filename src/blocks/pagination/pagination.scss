@@ -40,7 +40,7 @@
     }
   }
   
-  &-link {
+  .page-link {
     border: none;
     display: flex;
     height: 40px;
@@ -51,6 +51,8 @@
     color: $color-ocean;
     padding-left: 15px;
     padding-right: 15px;
+    outline: none;
+    box-shadow: none;
 
     &:hover, &:focus {
       text-decoration: underline;

@@ -5,13 +5,28 @@
 .promo-block {
 
   $block-name: &; // #{$block-name}__element {}
-  margin-bottom: 143px;
+  margin-bottom: 54px;
+  
+  @include media-breakpoint-up(md) {
+    margin-bottom: 143px;
+  }
 
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 24px;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+      margin-bottom: 50px;
+    }
   }
 
   &--trust {
-    margin-bottom: 120px;
+    padding-bottom: 65px;
+    margin-bottom: 0px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 120px;
+    }
   }
 }

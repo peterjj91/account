@@ -5,27 +5,86 @@
 .team-promo {
 
   $block-name: &; // #{$block-name}__element {}
-  padding: 150px 0px 0px 0px;
+  padding: 55px 0px 0px 0px;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 150px;
+    text-align: left;
+  }
 
   &__title {
-    margin-bottom: 53px;
+    margin-bottom: 24px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 53px;
+    }
   }
   
   &__content {
+    margin-bottom: 18px;
+
+    @include media-breakpoint-up(md) {
+      @include make-col(8);
+      margin-bottom: 0;
+    }
+
     p {
       font-weight: normal;
-      font-size: 18px;
-      line-height: 150%;
+      font-size: 15px;
+      line-height: 23px;
       color: #252528;
       opacity: 0.8;
+
+      @include media-breakpoint-up(md) {
+        font-size: 18px;
+        line-height: 150%;
+      }
     }
   }
 
   &__img {
-    margin: 58px -2px -1px -20px;
+    height: 253px;
+    position: relative;
+    margin: 22px -10px 0px -10px;
+    
+    @include media-breakpoint-up(md) {
+      height: auto;
+      margin-top: 58px;
+      margin-left: -20px;
+      margin-right: -2px;
+      margin-bottom: -1px;
+    }
 
     img {
-      width: 100%;
+      max-width: none;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      transform: translate(-50%, 0);
+      left: 50%;
+
+      @include media-breakpoint-up(md) {
+        width: 100%;
+        height: auto;
+        position: relative;
+        max-width: 100%;
+        transform: none;
+        left: auto;
+        top: auto;
+      }
+    }
+  }
+
+  &__row {
+    @include media-breakpoint-up(md) {
+      @include make-row;
+    }
+  }
+
+  &__quote {
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
     }
   }
 }

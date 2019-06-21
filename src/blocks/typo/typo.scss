@@ -3,22 +3,32 @@
 
 body {
   // font-family: $font-family-sans-serif;
-  min-width: 1300px;
+  min-width: 320px;
+  // padding-top: 130px;
 }
 
 .h1,h1 {
-  font-size: 40px;
   font-weight: 600;
-  line-height: 49px;
+  font-size: 28px;
+  line-height: 34px;
   margin-bottom: 30px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 40px;
+    line-height: 49px;
+  }
 }
 
 .h2,h2 {
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 600;
   color: $color-space;
   line-height: 37px;
   margin-bottom: 30px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 30px;
+  }
 }
 
 .h3,h3 {
@@ -27,6 +37,9 @@ body {
   line-height: 27px;
   color: $color-space;
   margin-bottom: 27px;
+
+  @include media-breakpoint-up(md) {
+  }
 }
 
 .h4,h4 {
@@ -35,6 +48,9 @@ body {
   font-weight: 600;
   color: $color-space;
   margin-bottom: 24px;
+
+  @include media-breakpoint-up(md) {
+  }
 }
 
 p, .text {
@@ -42,6 +58,9 @@ p, .text {
   color: $color-space;
   font-weight: 500;
   margin-bottom: 20px;
+
+  @include media-breakpoint-up(md) {
+  }
 }
 
 .text {
@@ -112,23 +131,35 @@ a, .link {
   list-style: none;
   position: relative;
   line-height: 140%;
+
+  @include media-breakpoint-up(md) {
+
+  }
 }
 
 .list-style {
   li {
-    padding-left: 15px;
+    padding-left: 22px;
     margin-bottom: 20px;
     position: relative;
+
+    @include media-breakpoint-up(md) {
+      padding-left: 15px;
+    }
 
     &:before {
       content: "";
       position: absolute;
       left: 0;
-      top: 8px;
+      top: 11px;
       width: 6px;
       height: 6px;
       border-radius: 50%;
       background-color: $color-ocean;
+
+      @include media-breakpoint-up(md) {
+        top: 8px;
+      }
     }
 
     &:last-child {
