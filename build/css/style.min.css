@@ -5093,7 +5093,9 @@ a:hover, a:focus, .link:hover, .link:focus {
 .page-footer__bottom {
     border-top: 1px solid #97a0b2;
     padding-top: 20px;
-    text-align: center; }
+    text-align: center;
+    margin-left: -10px;
+    margin-right: -10px; }
 .page-footer__bottom p {
       font-weight: 500;
       font-size: 12px;
@@ -8019,7 +8021,8 @@ a:hover, a:focus, .link:hover, .link:focus {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        padding-top: 32px; }
+        padding-top: 32px;
+        margin: 0; }
         .page-footer__bottom p {
           font-size: 14px;
           line-height: 17px;
