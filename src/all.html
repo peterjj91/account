@@ -12,7 +12,9 @@
   @@include('blocks/slideout/slideout.html')
 
   <div class="page__inner" id="main">
-    @@include('blocks/page-header/page-header.html')
+    <header class="page-header" role="banner">
+      @@include('blocks/page-header/page-header.html')
+    </header>
     
     <div class="page__content">
       <main class="page__main-content" role="main">
@@ -20,7 +22,7 @@
         <div class="container">
           
           <ul>
-            <li><a href="index.html">index.html</a></li>
+            <li><a href="index.html">Главная</a></li>
             <li>
               <a href="#" data-toggle="modal" data-target="#callback">
                 Перезвоните мне
@@ -31,6 +33,7 @@
                 Перезвоните мне -  успех (Нажмите на "Жду звонка")
               </a>
             </li>
+            <li><a href="service.html">Услуги</a></li>
           </ul>
 
         </div>

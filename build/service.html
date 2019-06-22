@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Стили</title>
+  <title>Услуги</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -134,162 +134,134 @@
     <div class="page__content">
       <main class="page__main-content" role="main">
         <div class="container">
-          
-          <div class="display-1">Typography</div>
-
-          <br><br>
-
-          <h1 class="h1">H1: Montserrat, SemiBold, 40 px, #252528</h1>
-          <h2 class="h2">H2: Montserrat, SemiBold, 30 px, #252528</h1>
-          <h3 class="h3">H3: Montserrat, SemiBold, 22 px, #252528</h1>
-          <h4 class="h4">H4: Proxima Nova, Semibold, 20 px, #252528</h1>
-
-          <p class="text">
-            Parapraph Text: Montserrat, Medium, 20 px, Line height 150%, #252528 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accum
-          </p>
-
-          <p class="text--light">
-            Body Paragraph Text: Proxima Nova, Regular, 18px, Line height 150%, Paragrahp spasing 20 px, #515153 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
-          </p>
-
-          <p class="text--subtext">
-            Subext: Proxima Nova, Regular, 16 px, #97A0B2
-          </p>
-
-          <p class="text--subtext-light">
-            Subext: Montserrat, Medium, 15 px, #97A0B2
-          </p>
-
-          <br><br>
-
-          <div class="display-1">Links</div>
-
-          <br><br>
-
-          <div class="h4 text--smoke text--simple-weight">Default</div>
-          <ul class="list-unstyled">
-            <li>
-              <a href="#" class="link link--fat">Вернуться в раздел «Новости»</a>
-            </li>
-            <li>
-              <a href="#" class="link">ссылка в тексте новости</a>
-            </li>
-            <li>
-              <a href="#" class="link link--promo">Ссылка в результатах поиска</a>
-            </li>
-          </ul>
-
-          <br><br>
-
-          <ul class="list-style">
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>
-              Placeat eveniet nihil earum harum!
-            </li>
-            <li>
-              Aliquid, harum cupiditate iste maxime.
-
-              <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Placeat eveniet nihil earum harum!</li>
-                <li>Aliquid, harum cupiditate iste maxime.</li>
-              </ul>
-            </li>
-          </ul>
-
-          <br><br>
-
-          <div class="display-1">Card</div>
-
-          <br><br>
-          
-          <div class="" style="padding: 56px 58px; background-color: #303033;">
-            <a href="#" class="card">
-              <div class="card-body">
-                <h5 class="card-subtitle">4 февраля 2019</h5>
-                <p class="card-text">Нужно ли платить транспортный налог при перепродаже автомобиля в течение месяца</p>
-              </div>
-            </a>
-          </div>
-
-          <br><br>
-
-          <div class="display-1">Navigation</div>
-
-          <br><br>
-
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Главная</a></li>
-              <li class="breadcrumb-item"><a href="#">О компании</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Отзывы</li>
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Услуги</li>
             </ol>
           </nav>
 
-          <br>
+          <div class="article">
+            <div class="h2 article__title">Услуги</div>
 
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link page-link--arrow" href="#">
-                  <svg class="image__direction">
-                    <use xlink:href="img/sprite-svg.svg#icon-previous"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="page-item active" aria-current="page">
-                <a class="page-link" href="#">1</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">2</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">3</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link page-link--arrow" href="#">
-                  <svg class="image__direction">
-                    <use xlink:href="img/sprite-svg.svg#icon-next"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </nav>
+            <div class="article__row">
+              <div class="article__block">
+                <div class="service">
+                  <div class="h3 service__title">Учет и отчетность</div>
 
-          <br>
-
-          <div class="display-1">Search</div>
-
-          <br><br>
-
-          <div class="search">
-            <input type="text" class="search__input" placeholder="Поиск по сайту" class="">
-            <button class="search__btn">
-              <img src="img/search.svg" alt="">
-            </button>
-          </div>
-
-          <br><br>
-
-          <div class="display-1">Notification</div>
-
-          <div style="background-color: #97A0B2;padding: 98px 70px;">
-            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-              <div class="toast-header">
-                <img src="img/success.svg" class="toast-img" alt="...">
-                <div class="toast-description">
-                  <p class="">
-                    Ваше сообщение отправлено!  Мы ответим Вам в ближайшее время
-                  </p>
+                  <ul class="list-style">
+                    <li>
+                      Отражение операций на счетах бухгалтерского учета:
+                      <ul>
+                        <li>учет операций с МПЗ</li>
+                        <li>учет операций с внеоборотными активами</li>
+                        <li>учет движения денежных средств</li>
+                        <li>учет расчетов с дебиторами/кредиторами</li>
+                        <li>учет финансовых вложений</li>
+                        <li>учет полученных кредитов, займов</li>
+                        <li>учет расчетов по обязательным платежам</li>
+                        <li>учет расчетов с персоналом</li>
+                        <li>учет капитала</li>
+                        <li>учет финансовых результатов деятельности</li>
+                        <li>учет операций на забалансовых счетах</li>
+                      </ul>
+                    </li>
+                    <li>Расчет, начисление налогов и взносов, формирование налоговых регистров</li>
+                    <li>Подготовка и сдача обязательной отчетности в налоговые органы и внебюджетные фонды</li>
+                    <li>Сопровождение ВЭД</li>
+                    <li>Формирование бухгалтерских  и первичных документов</li>
+                    <li>Формирование плана счетов  и учетной политики</li>
+                    <li>Расчет заработной платы</li>
+                    <li>
+                      Кадровое делопроизводство:
+                      <ul>
+                        <li>оформление договорных отношений с работниками</li>
+                        <li>сопровождение штатного расписания</li>
+                        <li>оформление и регистрация приказов по личному составу</li>
+                        <li>формирование и ведение личных дел сотрудников</li>
+                        <li>учет рабочего времени сотрудников (отпуска, больничные, командировки)</li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
-                <!-- <small class="text-muted">just now</small>
-                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button> -->
+              </div>
+              <div class="article__block">
+                <div class="service">
+                  <div class="h3 service__title">Консультации</div>
+
+                  <ul class="list-style">
+                    <li>
+                      Поддержка по вопросам налогообложения  и бухгалтерского учета:
+                      <ul>
+                        <li>консультационная помощь в оптимизации налоговой нагрузки</li>
+                        <li>подготовка ответов по запросам налоговой инспекции</li>
+                        <li>сопровождение аудиторских и налоговых проверок</li>
+                        <li>выезд специалиста в налоговые органы</li>
+                        <li>помощь в выборе и регистрации кассовых аппаратов</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Поддержка по юридическим вопросам:
+                      <ul>
+                        <li>проверка надежности контрагентов</li>
+                        <li>подготовка и проверка договоров и других юридических документов</li>
+                        <li>помощь в составлении претензий, исков в суды, урегулировании споров</li>
+                        <li>помощь в регистрации и внесении изменений в компании, открытии счетов</li>
+                        <li>сопровождение сложных сделок, в т.ч. с иностранными контрагентами</li>
+                        <li>консультации по другим юридическим вопросам</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="article__block">
+                <div class="service">
+                  <div class="h3 service__title">Бизнес-ассистент</div>
+
+                  <ul class="list-style">
+                    <li>Подготовка платежных поручений  в интернет-банке и напоминание  о платежах</li>
+                    <li>Помощь во взаимодействии с банками по вопросам текущей деятельности компании</li>
+                    <li>Помощь при выборе и сборе документов по банковским услугам:</li>
+                    <li>
+                      <ul>
+                        <li>зарплатные проекты</li>
+                        <li>депозиты</li>
+                        <li>кредиты</li>
+                        <li>эквайринг</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Помощь в поиске сотрудников: 
+                      <ul>
+                        <li>подготовка вакансий</li>
+                        <li>размещение их на HR-порталах</li>
+                        <li>организация собеседований</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Помощь в организации командировок:
+                      <ul>
+                        <li>подбор и бронирование билетов  на транспорт, гостиниц</li>
+                        <li>оформление отчетных документов</li>
+                      </ul>
+                    </li>
+                    <li>Помощь в поиске помещений, поставщиков</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
+            <div class="article__calculate">
+              <div class="h3 article__calculate__title">Узнайте стоимость услуг прямо сейчас</div>
+
+              <a href="#" class="btn btn-primary">Рассчитать тариф</a>
+            </div>
+
+            <div class="article__info">
+              <img src="img/circle-question.svg" alt="">
+              <p>У Вас остались вопросы? Позвоните нам <a href="tel:84957237049">8 (495) 723-70-49</a> или <a href="#" class="call" data-toggle="modal" data-target="#callback">закажите обратный звонок</a></p>
+            </div>
+          </div>
         </div> 
       </main>
     </div>

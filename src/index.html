@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Index</title>
+  <title>Главная</title>
   <meta name="description" content="">
   @@include('_include/page_head.html')
 </head>
@@ -12,13 +12,14 @@
   @@include('blocks/slideout/slideout.html')
 
   <div class="page__inner" id="main">
-    @@include('blocks/page-header/page-header.html')
+    <header class="page-header page-header--clear" role="banner">
+      @@include('blocks/page-header/page-header.html')
+    </header>
     
     <div class="page__content">
       <main class="page__main-content" role="main">
-
-        <div class="container">
-          <div class="slider__wrapper" data-slideout-ignore>
+        <div class="slider__wrapper" data-slideout-ignore>
+          <div class="container">
             <div class="slider">
               <div>
                 <div class="slider__item">
@@ -141,18 +142,10 @@
                 </div>
               </div>
             </div>
-
-            <!-- <div class="slider__nav slider__nav--main">
-              <svg class="slider__arrow slider__arrow--prev">
-                <use xlink:href="img/sprite-svg.svg#arrow-left"></use>
-              </svg>
-              <ul class="slider__dots"></ul>
-              <svg class="slider__arrow slider__arrow--next">
-                <use xlink:href="img/sprite-svg.svg#arrow-right"></use>
-              </svg>
-            </div> -->
           </div>
+        </div>
 
+        <div class="container">
           <div class="promo-block">
             <div class="h2 promo-block__title">Наши преимущества</div>
 

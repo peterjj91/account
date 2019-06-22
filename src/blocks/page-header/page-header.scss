@@ -11,19 +11,21 @@
   // z-index: 2;
   background-color: #fff;
   padding: 7px 0px 7px 0px;
-  margin-bottom: 51px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(151, 160, 178, 0.3);
 
   @include media-breakpoint-up(xs) {
   }
   @include media-breakpoint-up(sm) {
   }
   @include media-breakpoint-up(md) {
-
+    margin-bottom: 51px;
   }
   @include media-breakpoint-up(lg) {
     padding-top: 27px;
-    padding-bottom: 27px;
-    margin-bottom: 0;
+    padding-bottom: 17px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(151, 160, 178, 0.3);
   }
   @include media-breakpoint-up(xl) {
   }
@@ -60,6 +62,15 @@
     
     @include media-breakpoint-up(lg) {
       display: none;
+    }
+  }
+
+  &--clear {
+    
+
+    @include media-breakpoint-up(lg) {
+      border-bottom: none;
+      margin-bottom: 15px;
     }
   }
 }

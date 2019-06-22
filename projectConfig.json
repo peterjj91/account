@@ -36,7 +36,9 @@
     "quote": [],
     "slideout": [],
     "menu": [],
-    "hamburger": []
+    "hamburger": [],
+    "service": [],
+    "article": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
