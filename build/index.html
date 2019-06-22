@@ -23,7 +23,7 @@
 
 <body>
   <nav id="menu" class="menu">
-    <div class="hamburger open hamburger--space">
+    <div class="hamburger open hamburger--space toggle-menu">
       <span></span>
       <span></span>
       <span></span>
@@ -120,7 +120,7 @@
             </div>
 
             <div class="page-header__toggle">
-              <div class="hamburger">
+              <div class="hamburger toggle-menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -569,6 +569,88 @@
     </div>
   </div>
   <script src="js/script.min.js?1"></script>
+  <div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title" id="exampleModalLabel">
+            Перезвоните мне
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div class="hamburger hamburger--space open">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control input input--profile" placeholder="Ваше имя">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control input input--callback" placeholder="Телефон">
+            </div>
+            <div class="form-group">
+              <div class="form-mini">
+                Все поля обязательны для заполнения
+              </div>
+              <button type="button" class="btn btn-primary">Жду звонка</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="modal fade" id="callback-success" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title" id="exampleModalLabel">
+            Перезвоните мне
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div class="hamburger hamburger--space open">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control input input--profile" placeholder="Ваше имя">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control input input--callback" placeholder="Телефон">
+            </div>
+            <div class="form-group">
+              <div class="form-mini">
+                Все поля обязательны для заполнения
+              </div>
+              <button type="button" class="btn btn-primary toggle-message">Жду звонка</button>
+            </div>
+            <div class="modal-notification">
+              <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="img/success.svg" class="toast-img" alt="...">
+                  <div class="toast-description">
+                    <p class="">
+                      Ваше сообщение отправлено!  Мы ответим Вам в ближайшее время
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

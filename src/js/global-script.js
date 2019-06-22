@@ -14,10 +14,14 @@ $(document).ready(function() {
 });
 
 $(document).ready(function(){
-  $('.hamburger').click(function(){
-    // $(this).toggleClass('open');
-    // slideout.close();
-    slideout.toggle();
+  $('.toggle-menu').click(function(){
+    $(this).toggleClass('open');
+  });
+});
+
+$(document).ready(function(){
+  $('.toggle-message').click(function(){
+    $(".modal-notification").toggleClass('active');
   });
 });
 
@@ -29,16 +33,13 @@ var slideout = new Slideout({
   'padding': 320,
   'tolerance': 70
 });
-
 document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
   slideout.toggle();
 });
-
 function close(eve) {
   eve.preventDefault();
   slideout.close();
 }
-
 slideout
   .on('beforeopen', function() {
     this.panel.classList.add('panel-open');

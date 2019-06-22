@@ -5,5 +5,60 @@
 .form {
 
   $block-name: &; // #{$block-name}__element {}
+  
+  &-control {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid rgba(151, 160, 178, 0.5);
+    padding: 8px 30px 5px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    height: 40px;
 
+    &:focus {
+      background-color: transparent;
+      outline: none;
+      box-shadow: none;
+      color: white;
+      border-color: rgba(151, 160, 178, 0.5);
+    }
+  }
+
+  &-group {
+    margin-bottom: 33px;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 43px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-mini {
+    display: block;
+    font-family: $proximaNova-regular;
+    margin-top: 76px;
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 8px;
+    margin-bottom: 20px;
+    color: rgba(151, 160, 178, 0.7);
+
+    @include media-breakpoint-up(sm) {
+      font-size: 15px;
+      line-height: 120%;
+      margin-top: 0;
+    }
+  }
+}
+
+textarea.form-control {
+  padding-top: 10px;
+  padding-bottom: 5px;
 }

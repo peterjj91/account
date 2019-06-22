@@ -5,5 +5,114 @@
 .modal {
 
   $block-name: &; // #{$block-name}__element {}
+  color: white;
+  
+  &-backdrop {
+    background: $color-lighter;
 
+    &.show {
+      opacity: 0.4;
+    }
+  }
+
+  &-content {
+    background-color: $color-space;
+    border: none;
+    border-radius: 4px;
+    padding: 70px 30px;
+
+    @include media-breakpoint-up(sm) {
+      padding: 50px 60px;
+    }
+  }
+
+  .close {
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 10px 10px;
+    outline: none;
+    
+    @include media-breakpoint-up(sm) {
+      padding: 20px 19px;
+    }
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 100%;
+  
+    @include media-breakpoint-up(sm) {
+      font-size: 21px;
+      line-height: 26px;
+      text-align: left;
+    }
+  }
+
+  &-dialog {
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    @include media-breakpoint-up(sm) {
+      max-width: 440px;
+      margin: 0.5rem auto;
+    }
+  }
+
+  &-body {
+    padding: 0;
+    position: static;
+  }
+
+  &-header {
+    border: none;
+    padding: 0;
+    margin-bottom: 53px;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 43px;
+    }
+  }
+
+  &-footer {
+    border: none;
+    padding: 0;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  &-notification {
+    opacity: 0;
+    z-index: -10;
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 50%;
+    left: 0px;
+    margin: 0px 10px;
+
+    @include media-breakpoint-up(sm) {
+      transform: none;
+      margin: 0px -40px;
+      left: 0px;
+      right: 0px;
+      bottom: 39px;
+    }
+
+    &.active {
+      opacity: 1;
+      z-index: 0;
+      @extend .scale-up-bottom;
+      
+      @include media-breakpoint-down(sm) {
+        animation: none;
+      }
+    }
+  }
 }

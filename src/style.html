@@ -9,12 +9,13 @@
 </head>
 
 <body>
-  <div class="page__inner">
+  @@include('blocks/slideout/slideout.html')
+
+  <div class="page__inner" id="main">
+    @@include('blocks/page-header/page-header.html')
+
     <div class="page__content">
-      @@include('blocks/page-header/page-header.html')
-
       <main class="page__main-content" role="main">
-
         <div class="container">
           
           <div class="display-1">Typography</div>
@@ -153,9 +154,26 @@
 
           <br><br>
 
-        </div>
-        
+          <div class="display-1">Notification</div>
 
+          <div style="background-color: #97A0B2;padding: 98px 70px;">
+            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="img/success.svg" class="toast-img" alt="...">
+                <div class="toast-description">
+                  <p class="">
+                    Ваше сообщение отправлено!  Мы ответим Вам в ближайшее время
+                  </p>
+                </div>
+                <!-- <small class="text-muted">just now</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button> -->
+              </div>
+            </div>
+          </div>
+
+        </div> 
       </main>
     </div>
 
