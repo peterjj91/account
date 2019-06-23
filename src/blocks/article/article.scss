@@ -19,6 +19,12 @@
       text-align: left;
       margin-bottom: 38px;
     }
+
+    &--price {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 19px;
+      }
+    }
   }
 
   &__row {

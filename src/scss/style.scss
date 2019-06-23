@@ -10,6 +10,7 @@
 @import './node_modules/bootstrap/scss/bootstrap.scss';
 @import './node_modules/bootstrap-select/sass/bootstrap-select.scss';
 @import './node_modules/slick-carousel/slick/slick.scss';
+@import 'nouislider/distribute/nouislider.css';
 @import './src/blocks/default/default.scss';
 @import './src/blocks/page/page.scss';
 @import './src/blocks/typo/typo.scss';
@@ -49,3 +50,7 @@
 @import './src/blocks/hamburger/hamburger.scss';
 @import './src/blocks/service/service.scss';
 @import './src/blocks/article/article.scss';
+@import './src/blocks/price-promo/price-promo.scss';
+@import './src/blocks/noUi/noUi.scss';
+@import './src/blocks/calculate-promo/calculate-promo.scss';
+@import './src/blocks/table/table.scss';

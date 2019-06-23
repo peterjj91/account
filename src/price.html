@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Цены</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+  @@include('blocks/slideout/slideout.html')
+
+  <div class="page__inner" id="main">
+    <header class="page-header" role="banner">
+      @@include('blocks/page-header/page-header.html')
+    </header>
+
+    <div class="page__content">
+      <main class="page__main-content" role="main">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Цены</li>
+            </ol>
+          </nav>
+
+          <div class="article">
+            <div class="h2 article__title article__title--price">Цены</div>
+
+            <div class="price-promo">
+              <div class="price-promo__title">Расчет стоимости и выбор тарифа</div>
+
+              <div class="price-promo__toggle">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-primary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                    Я знаю ежемесячную выручку
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> 
+                    Я знаю количество операций в месяц
+                  </label>
+                </div>
+              </div>
+
+              <div class="price-promo__revenue">
+                <p>Максимальная месячная выручка вашей компании</p>
+
+                <div class="h2 price-promo__revenue__title" id="slider-range-value">
+                  700 000 рублей
+                </div>
+                
+                <div class="noUi-wrapper">
+                  <div id="slider-range"></div>
+                </div>
+              </div>
+
+              <div class="price-promo__optional">
+                <div class="calculate-promo">
+                  <div class="calculate-promo__top">
+                    <div class="calculate-promo__title text--underline">
+                      Указать дополнительные параметры
+                    </div>
+                  </div>
+
+                  <div class="calculate-promo__hidden">
+                    <form>
+                      <div class="form-group calculate-promo__row">
+                        <label for="inputEmail3" class="calculate-promo__description">
+                          Буду оплачивать услуги вперед на
+                        </label>
+                        <div class="calculate-promo__content">
+                          <select class="selectpicker" placeholder="">
+                            <option>1 месяц</option>
+                            <option>1 месяц</option>
+                            <option>1 месяц</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group calculate-promo__row">
+                        <label for="inputEmail3" class="calculate-promo__description">
+                          Отрасль в которой работает организация
+                        </label>
+                        <div class="calculate-promo__content">
+                          <select class="selectpicker" placeholder="">
+                            <option>Оптовая торговля</option>
+                            <option>Оптовая торговля</option>
+                            <option>Оптовая торговля</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group calculate-promo__row">
+                        <label for="inputEmail3" class="calculate-promo__description">
+                          Кол-во кассовых аппартов
+                        </label>
+                        <div class="calculate-promo__content">
+                          <select class="selectpicker" placeholder="">
+                            <option>Более 5</option>
+                            <option>Оптовая 1</option>
+                            <option>Оптовая торговля</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group calculate-promo__row">
+                        <label for="inputEmail3" class="calculate-promo__description">
+                          Кол-во обособленных подразделений
+                        </label>
+                        <div class="calculate-promo__content">
+                          <select class="selectpicker" placeholder="">
+                            <option>Более 5</option>
+                            <option>Оптовая 1</option>
+                            <option>Оптовая торговля</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group calculate-promo__row">
+                        <label for="inputEmail3" class="calculate-promo__description">
+                          Наличие операций с фин. инструментами
+                        </label>
+                        <div class="calculate-promo__content">
+                          <select class="selectpicker" placeholder="">
+                            <option>Нет</option>
+                            <option>Да</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group calculate-promo__row">
+                        <label for="inputEmail3" class="calculate-promo__description">
+                          Применение разных ставок НДС
+                        </label>
+                        <div class="calculate-promo__content">
+                          <select class="selectpicker" placeholder="">
+                            <option>Нет</option>
+                            <option>Да</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group calculate-promo__row">
+                        <label for="inputEmail3" class="calculate-promo__description">
+                          Применение разных систем налогообложения
+                        </label>
+                        <div class="calculate-promo__content">
+                          <select class="selectpicker" placeholder="">
+                            <option>Нет</option>
+                            <option>Да</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group calculate-promo__row">
+                        <label for="inputEmail3" class="calculate-promo__description">
+                          Наличие основных средств
+                        </label>
+                        <div class="calculate-promo__content">
+                          <select class="selectpicker" placeholder="">
+                            <option>Нет</option>
+                            <option>Да</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group calculate-promo__row">
+                        <label for="inputEmail3" class="calculate-promo__description">
+                          Наличие транспортной экспедиции
+                        </label>
+                        <div class="calculate-promo__content">
+                          <select class="selectpicker" placeholder="">
+                            <option>Нет</option>
+                            <option>Да</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group calculate-promo__row">
+                        <label for="inputEmail3" class="calculate-promo__description">
+                          Наличие командировок
+                        </label>
+                        <div class="calculate-promo__content">
+                          <select class="selectpicker" placeholder="">
+                            <option>Нет</option>
+                            <option>Да</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group calculate-promo__row">
+                        <label for="inputEmail3" class="calculate-promo__description">
+                          Торговля подакцизными товарами
+                        </label>
+                        <div class="calculate-promo__content">
+                          <select class="selectpicker" placeholder="">
+                            <option>Нет</option>
+                            <option>Да</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group calculate-promo__row">
+                        <label for="inputEmail3" class="calculate-promo__description">
+                          Наличие авансовых расчетов
+                        </label>
+                        <div class="calculate-promo__content">
+                          <select class="selectpicker" placeholder="">
+                            <option>Нет</option>
+                            <option>Да</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group calculate-promo__row">
+                        <button class="calculate-promo__btn btn btn-info">
+                          Очистить все введенные данные
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="price-promo__calculate">
+                <a href="#" class="btn btn-primary">Выполнить расчет</a>
+              </div>
+
+              <div class="price-promo__compare">
+                <div class="compare">
+                  <div class="compare__table">
+                    <table class="table table__main">
+                      <thead>
+                        <tr>
+                          <th>Тарифные планы</th>
+                          <th>Простой</th>
+                          <th>Основной</th>
+                          <th>Расширенный</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <p><strong>Предварительная стоимость за месяц</strong> (указана с учетом скидки, НДС не облагается)</p>
+                          </td>
+                          <td>
+                            <div class="h2">12 500 руб.</div>
+                          </td>
+                          <td>
+                            <div class="h2">32 000 руб.</div>
+                          </td>
+                          <td>
+                            <div class="h2">40 000 руб.</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>Уровень сложности учета</p>
+                          </td>
+                          <td>
+                            <p>Базовый</p>
+                          </td>
+                          <td>
+                            <p>Базовый</p>
+                          </td>
+                          <td>
+                            <p>Базовый</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>Скидка за предоплату</p>
+                          </td>
+                          <td>
+                            <p>Нет</p>
+
+                            <a href="#" class="btn btn-primary">Выбрать тариф</a>
+                          </td>
+                          <td>
+                            <p>Нет</p>
+
+                            <a href="#" class="btn btn-primary">Выбрать тариф</a>
+                          </td>
+                          <td>
+                            <p>Нет</p>
+
+                            <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Выбрать тариф</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            
+                          </td>
+                          <td>
+                            
+                          </td>
+                          <td>
+                            
+                          </td>
+                          <td>
+                            
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            
+                          </td>
+                          <td>
+                            
+                          </td>
+                          <td>
+                            
+                          </td>
+                          <td>
+                            
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </main>
+    </div>
+
+    @@include('blocks/page-footer/page-footer.html')
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

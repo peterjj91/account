@@ -20,6 +20,12 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+  $('.calculate-promo__title').click(function(){
+    $(".calculate-promo").toggleClass('active');
+  });
+});
+
+$(document).ready(function(){
   $('.toggle-message').click(function(){
     $(".modal-notification").toggleClass('active');
   });
@@ -51,3 +57,29 @@ slideout
     this.panel.classList.remove('panel-open');
     this.panel.removeEventListener('click', close);
   });
+
+
+// range slider
+var rangeSlider = document.getElementById('slider-range');
+
+// $(document).ready(function() {
+  noUiSlider.create(rangeSlider, {
+    start: [4000],
+    connect: 'lower',
+    range: {
+      'min': [2000],
+      'max': [10000]
+    },
+    format: wNumb({
+        decimals: 0,
+        suffix: ' рублей'
+    })
+  });
+// });
+
+// Display the slider value
+var rangeSliderValueElement = document.getElementById('slider-range-value');
+
+rangeSlider.noUiSlider.on('update', function (values, handle) {
+    rangeSliderValueElement.innerHTML = values[handle];
+});

@@ -88,6 +88,11 @@ p, .text {
   &--simple-weight {
     font-weight: normal;
   }
+
+  &--underline {
+    color: $color-ocean;
+    border-bottom: 1px dashed;
+  }
 }
 
 a, .link {

@@ -38,7 +38,11 @@
     "menu": [],
     "hamburger": [],
     "service": [],
-    "article": []
+    "article": [],
+    "price-promo": [],
+    "noUi": [],
+    "calculate-promo": [],
+    "table": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -46,19 +50,22 @@
     "./src/scss/functions.scss",
     "./node_modules/bootstrap/scss/bootstrap.scss",
     "./node_modules/bootstrap-select/sass/bootstrap-select.scss",
-    "./node_modules/slick-carousel/slick/slick.scss"
+    "./node_modules/slick-carousel/slick/slick.scss",
+    "nouislider/distribute/nouislider.css"
   ],
   "addCssAfter": [],
   "singleCompiled": [],
   "addJsBefore": [
     "./node_modules/jquery/dist/jquery.js",
+    "./node_modules/object-fit-images/dist/ofi.js",
+    "./node_modules/svg4everybody/dist/svg4everybody.js",
     "./node_modules/popper.js/dist/umd/popper.js",
     "./node_modules/bootstrap/dist/js/bootstrap.js",
     "./node_modules/slick-carousel/slick/slick.js",
     "./node_modules/bootstrap-select/dist/js/bootstrap-select.js",
-    "./node_modules/svg4everybody/dist/svg4everybody.js",
     "./node_modules/slideout/dist/slideout.js",
-    "./node_modules/object-fit-images/dist/ofi.js"
+    "./node_modules/nouislider/distribute/nouislider.js",
+    "./node_modules/wnumb/wNumb.js"
   ],
   "addJsAfter": [
     "./src/js/global-script.js"
