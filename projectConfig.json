@@ -42,7 +42,9 @@
     "price-promo": [],
     "noUi": [],
     "calculate-promo": [],
-    "table": []
+    "table": [],
+    "accordion": [],
+    "accordion-promo": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

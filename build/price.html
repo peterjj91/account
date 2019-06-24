@@ -79,12 +79,9 @@
       <div class="page-header__inner">
         <div class="container">
           <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand js-slideout-toggle" href="#">
+            <a class="navbar-brand" href="#">
               <img src="img/logo.svg" alt="">
             </a>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button> -->
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
@@ -119,7 +116,7 @@
             </div>
 
             <div class="page-header__toggle">
-              <div class="hamburger toggle-menu">
+              <div class="hamburger js-slideout-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -167,7 +164,7 @@
                   700 000 рублей
                 </div>
                 
-                <div class="noUi-wrapper">
+                <div class="noUi-wrapper" data-slideout-ignore>
                   <div id="slider-range"></div>
                 </div>
               </div>
@@ -333,96 +330,586 @@
               </div>
 
               <div class="price-promo__compare">
-                <div class="compare">
-                  <div class="compare__table">
-                    <table class="table table__main">
-                      <thead>
-                        <tr>
-                          <th>Тарифные планы</th>
-                          <th>Простой</th>
-                          <th>Основной</th>
-                          <th>Расширенный</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <p><strong>Предварительная стоимость за месяц</strong> (указана с учетом скидки, НДС не облагается)</p>
-                          </td>
-                          <td>
-                            <div class="h2">12 500 руб.</div>
-                          </td>
-                          <td>
-                            <div class="h2">32 000 руб.</div>
-                          </td>
-                          <td>
-                            <div class="h2">40 000 руб.</div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <p>Уровень сложности учета</p>
-                          </td>
-                          <td>
-                            <p>Базовый</p>
-                          </td>
-                          <td>
-                            <p>Базовый</p>
-                          </td>
-                          <td>
-                            <p>Базовый</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <p>Скидка за предоплату</p>
-                          </td>
-                          <td>
-                            <p>Нет</p>
+                <div class="price-promo__desktop price-promo__table--desktop">
+                  <table class="table table__main table__main--first">
+                    <thead>
+                      <tr>
+                        <th>Тарифные планы</th>
+                        <th>Простой</th>
+                        <th>Основной</th>
+                        <th>Расширенный</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="title1">
+                            <strong>Предварительная стоимость за месяц</strong>
+                          </div>
+                          <div class="title3">(указана с учетом скидки, НДС не облагается)</div>
+                        </td>
+                        <td>
+                          <div class="h3">12 500 руб.</div>
+                        </td>
+                        <td>
+                          <div class="h3">32 000 руб.</div>
+                        </td>
+                        <td>
+                          <div class="h3">40 000 руб.</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">Уровень сложности учета</div>
+                        </td>
+                        <td>
+                          <div class="title3">Базовый</div>
+                        </td>
+                        <td>
+                          <div class="title3">Базовый</div>
+                        </td>
+                        <td>
+                          <div class="title3">Базовый</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">Скидка за предоплату</div>
+                        </td>
+                        <td>
+                          <div class="title3">Нет</div>
+                        </td>
+                        <td>
+                          <div class="title3">Нет</div>
+                        </td>
+                        <td>
+                          <div class="title3">Нет</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#order">Выбрать тариф</a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#order">Выбрать тариф</a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Выбрать тариф</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
 
-                            <a href="#" class="btn btn-primary">Выбрать тариф</a>
-                          </td>
-                          <td>
-                            <p>Нет</p>
+                  <table class="table table__main table__main--second">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="title2">Услуги, включенные в тариф:</div>
+                        </td>
+                        <td>
+                          
+                        </td>
+                        <td>
+                          
+                        </td>
+                        <td>
+                          
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">Бухгалтерский учет</div>
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">
+                            Кадровый учет и расчет заработной платы
+                          </div>
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">
+                            Офлайн-консультации по налоговым вопросам, кол-во вопросов в месяц / год
+                          </div>
+                        </td>
+                        <td>
+                          <div class="title3">2 / 10</div>
+                        </td>
+                        <td>
+                          <div class="title3">5 / 25</div>
+                        </td>
+                        <td>
+                          <div class="title3">10 / 50</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">
+                            Консультационная поддержка по налоговым и юридическим вопросам, кол-во вопросов в месяц / год
+                          </div>
+                        </td>
+                        <td>
+                          <img src="img/cross.svg" alt="">
+                        </td>
+                        <td>
+                          <div class="title3">10 / 25</div>
+                        </td>
+                        <td>
+                          <div class="title3">10 / 50</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">
+                            Подготовка платежных поручений и напоминание о платежах
+                          </div>
+                        </td>
+                        <td>
+                          <img src="img/cross.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">
+                            Подготовка договоров и юридических документов (не более 100 в месяц)
+                          </div>
+                        </td>
+                        <td>
+                          <img src="img/cross.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/cross.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">
+                            Расширенное сопровождение налоговых проверок (включая один бесплатный выезд специалиста на проверку)
+                          </div>
+                        </td>
+                        <td>
+                          <img src="img/cross.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/cross.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">
+                            Поддержка со стороны бизнес-ассистента
+                          </div>
+                        </td>
+                        <td>
+                          <img src="img/cross.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/cross.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
 
-                            <a href="#" class="btn btn-primary">Выбрать тариф</a>
-                          </td>
-                          <td>
-                            <p>Нет</p>
+                  <table class="table table__main table__main--third">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="title2">Ограничения:</div>
+                        </td>
+                        <td>
+                          
+                        </td>
+                        <td>
+                          
+                        </td>
+                        <td>
+                          
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">ООО и ИП на УСН, ЕНВД или патенте</div>
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">Все системы налогообложения и организационные формы</div>
+                        </td>
+                        <td>
+                          <img src="img/cross.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">Без ограничений по сложности учета</div>
+                        </td>
+                        <td>
+                          <img src="img/cross.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                        <td>
+                          <img src="img/checked.svg" alt="">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">Максимальная выручка в месяц</div>
+                        </td>
+                        <td>
+                          <div class="title4">7,5 млн. руб.</div>
+                        </td>
+                        <td>
+                          <div class="title4">10 млн. руб.</div>
+                        </td>
+                        <td>
+                          <div class="title4">15 млн. руб.</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">Количество сотрудников</div>
+                        </td>
+                        <td>
+                          <div class="title4">до 50</div>
+                        </td>
+                        <td>
+                          <div class="title4">до 80</div>
+                        </td>
+                        <td>
+                          <div class="title4">до 240</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">Сумма доплаты за сотрудников сверх лимита</div>
+                        </td>
+                        <td>
+                          <div class="title4">+500 руб. за 1 сотр.</div>
+                        </td>
+                        <td>
+                          <div class="title4">+2300 руб. за 5 сотр.</div>
+                        </td>
+                        <td>
+                          <div class="title4">+4000 руб. за 10 сотр.</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">
+                            Максимальное количество операций в месяц
+                          </div>
+                        </td>
+                        <td>
+                          <div class="title4">до 350</div>
+                        </td>
+                        <td>
+                          <div class="title4">до 700</div>
+                        </td>
+                        <td>
+                          <div class="title4">до 1200</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="title3">
+                            Сумма доплаты за операции сверх лимита
+                          </div>
+                        </td>
+                        <td>
+                          <div class="title4">+750 руб. за 10 опер.</div>
+                        </td>
+                        <td>
+                          <div class="title4">+3500 руб. за 50 опер.</div>
+                        </td>
+                        <td>
+                          <div class="title4">+6000 руб. за 100 опер.</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
-                            <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Выбрать тариф</a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            
-                          </td>
-                          <td>
-                            
-                          </td>
-                          <td>
-                            
-                          </td>
-                          <td>
-                            
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            
-                          </td>
-                          <td>
-                            
-                          </td>
-                          <td>
-                            
-                          </td>
-                          <td>
-                            
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                <div class="price-promo__table price-promo__table--mobile">
+                  <div class="price-promo__table__block">
+                    <div class="price-promo__table__title">
+                      Тарифный план: Простой
+                    </div>
+
+                    <div class="price-promo__table__description">
+                      <div class="price-promo__table__price">
+                        12 500 руб.
+                      </div>
+
+                      <div class="price-promo__table__text">
+                        <strong>Предварительная стоимость за месяц</strong> (указана с учетом скидки, НДС не облагается)
+                      </div>
+
+                      <div class="price-promo__table__level">
+                        Уровень сложности учета: Базовый
+                      </div>
+
+                      <div class="price-promo__table__discount">
+                        Скидка за предоплату: Нет
+                      </div>
+
+                      <div class="price-promo__table__accordion">
+                        <div class="accordion-promo">
+                          <a class="accordion-promo__title" 
+                             data-toggle="collapse" 
+                             href="#multiCollapseExample1" 
+                             role="button" 
+                             aria-expanded="false" 
+                             aria-controls="multiCollapseExample1">
+                            Услуги, включенные в тариф <img src="img/bottom.svg" alt="">
+                          </a>
+
+                          <div class="collapse multi-collapse accordion-promo__block" id="multiCollapseExample1">
+                            <div class="accordion-promo__description">
+                              <p>Бухгалтерский учет</p>
+                              <p>Кадровый учет и расчет заpработной платы</p>
+                              <p>Офлайн-консультации по налоговым вопросам, кол-во вопросов в месяц / год:  10 / 25</p>
+                              <p>Консультационная поддержка  по налоговым и юридическим вопросам, кол-во вопросов  в месяц / год:  10 / 50</p>
+                              <p>Подготовка платежных поручений и напоминание о платежах</p>
+                              <p>Подготовка договоров и юридических документов (не более 100 в месяц)</p>
+                              <p>Расширенное сопровождение налоговых проверок (включая один бесплатный выезд специалиста на проверку)</p>
+                              <p>Поддержка со стороны бизнес-ассистента</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-promo">
+                          <a class="accordion-promo__title" 
+                             data-toggle="collapse" 
+                             href="#multiCollapseExample2" 
+                             role="button" 
+                             aria-expanded="false" 
+                             aria-controls="multiCollapseExample2">
+                            Ограничения <img src="img/bottom.svg" alt="">
+                          </a>
+
+                          <div class="collapse multi-collapse accordion-promo__block" id="multiCollapseExample2">
+                            <div class="accordion-promo__description">
+                              <p>ООО и ИП на УСН, ЕНВД или патенте</p>
+                              <p>Все системы налогообложения и организационные формы</p>
+                              <p>Без ограничений по сложности учета</p>
+                              <p>Максимальная выручка в месяц:  15 млн.руб.</p>
+                              <p>Количество сотрудников:  до 240</p>
+                              <p>Сумма доплаты за сотрудников сверх лимита:  +4000 руб. за 10 сотр.</p>
+                              <p>Максимальное количество операций в месяц:  до 1200</p>
+                              <p>Сумма доплаты за операции сверх лимита:  +6000 руб. за 100 опер.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <a href="#" class="accordion-promo__btn btn btn-primary" data-toggle="modal" data-target="#order">Выбрать тариф</a>
+                    </div>
+                  </div>
+
+                  <div class="price-promo__table__block">
+                    <div class="price-promo__table__title">
+                      Тарифный план: Простой
+                    </div>
+
+                    <div class="price-promo__table__description">
+                      <div class="price-promo__table__price">
+                        12 500 руб.
+                      </div>
+
+                      <div class="price-promo__table__text">
+                        <strong>Предварительная стоимость за месяц</strong> (указана с учетом скидки, НДС не облагается)
+                      </div>
+
+                      <div class="price-promo__table__level">
+                        Уровень сложности учета: Базовый
+                      </div>
+
+                      <div class="price-promo__table__discount">
+                        Скидка за предоплату: Нет
+                      </div>
+
+                      <div class="price-promo__table__accordion">
+                        <div class="accordion-promo">
+                          <a class="accordion-promo__title" 
+                             data-toggle="collapse" 
+                             href="#multiCollapseExample11" 
+                             role="button" 
+                             aria-expanded="false" 
+                             aria-controls="multiCollapseExample11">
+                            Услуги, включенные в тариф <img src="img/bottom.svg" alt="">
+                          </a>
+
+                          <div class="collapse multi-collapse accordion-promo__block" id="multiCollapseExample11">
+                            <div class="accordion-promo__description">
+                              <p>Бухгалтерский учет</p>
+                              <p>Кадровый учет и расчет заpработной платы</p>
+                              <p>Офлайн-консультации по налоговым вопросам, кол-во вопросов в месяц / год:  10 / 25</p>
+                              <p>Консультационная поддержка  по налоговым и юридическим вопросам, кол-во вопросов  в месяц / год:  10 / 50</p>
+                              <p>Подготовка платежных поручений и напоминание о платежах</p>
+                              <p>Подготовка договоров и юридических документов (не более 100 в месяц)</p>
+                              <p>Расширенное сопровождение налоговых проверок (включая один бесплатный выезд специалиста на проверку)</p>
+                              <p>Поддержка со стороны бизнес-ассистента</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-promo">
+                          <a class="accordion-promo__title" 
+                             data-toggle="collapse" 
+                             href="#multiCollapseExample22" 
+                             role="button" 
+                             aria-expanded="false" 
+                             aria-controls="multiCollapseExample22">
+                            Ограничения <img src="img/bottom.svg" alt="">
+                          </a>
+
+                          <div class="collapse multi-collapse accordion-promo__block" id="multiCollapseExample22">
+                            <div class="accordion-promo__description">
+                              <p>ООО и ИП на УСН, ЕНВД или патенте</p>
+                              <p>Все системы налогообложения и организационные формы</p>
+                              <p>Без ограничений по сложности учета</p>
+                              <p>Максимальная выручка в месяц:  15 млн.руб.</p>
+                              <p>Количество сотрудников:  до 240</p>
+                              <p>Сумма доплаты за сотрудников сверх лимита:  +4000 руб. за 10 сотр.</p>
+                              <p>Максимальное количество операций в месяц:  до 1200</p>
+                              <p>Сумма доплаты за операции сверх лимита:  +6000 руб. за 100 опер.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <a href="#" class="accordion-promo__btn btn btn-primary" data-toggle="modal" data-target="#order">Выбрать тариф</a>
+                    </div>
+                  </div>
+
+                  <div class="price-promo__table__block">
+                    <div class="price-promo__table__title">
+                      Тарифный план: Простой
+                    </div>
+
+                    <div class="price-promo__table__description">
+                      <div class="price-promo__table__price">
+                        12 500 руб.
+                      </div>
+
+                      <div class="price-promo__table__text">
+                        <strong>Предварительная стоимость за месяц</strong> (указана с учетом скидки, НДС не облагается)
+                      </div>
+
+                      <div class="price-promo__table__level">
+                        Уровень сложности учета: Базовый
+                      </div>
+
+                      <div class="price-promo__table__discount">
+                        Скидка за предоплату: Нет
+                      </div>
+
+                      <div class="price-promo__table__accordion">
+                        <div class="accordion-promo">
+                          <a class="accordion-promo__title" 
+                             data-toggle="collapse" 
+                             href="#multiCollapseExample111" 
+                             role="button" 
+                             aria-expanded="false" 
+                             aria-controls="multiCollapseExample111">
+                            Услуги, включенные в тариф <img src="img/bottom.svg" alt="">
+                          </a>
+
+                          <div class="collapse multi-collapse accordion-promo__block" id="multiCollapseExample111">
+                            <div class="accordion-promo__description">
+                              <p>Бухгалтерский учет</p>
+                              <p>Кадровый учет и расчет заpработной платы</p>
+                              <p>Офлайн-консультации по налоговым вопросам, кол-во вопросов в месяц / год:  10 / 25</p>
+                              <p>Консультационная поддержка  по налоговым и юридическим вопросам, кол-во вопросов  в месяц / год:  10 / 50</p>
+                              <p>Подготовка платежных поручений и напоминание о платежах</p>
+                              <p>Подготовка договоров и юридических документов (не более 100 в месяц)</p>
+                              <p>Расширенное сопровождение налоговых проверок (включая один бесплатный выезд специалиста на проверку)</p>
+                              <p>Поддержка со стороны бизнес-ассистента</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-promo">
+                          <a class="accordion-promo__title" 
+                             data-toggle="collapse" 
+                             href="#multiCollapseExample222" 
+                             role="button" 
+                             aria-expanded="false" 
+                             aria-controls="multiCollapseExample222">
+                            Ограничения <img src="img/bottom.svg" alt="">
+                          </a>
+
+                          <div class="collapse multi-collapse accordion-promo__block" id="multiCollapseExample222">
+                            <div class="accordion-promo__description">
+                              <p>ООО и ИП на УСН, ЕНВД или патенте</p>
+                              <p>Все системы налогообложения и организационные формы</p>
+                              <p>Без ограничений по сложности учета</p>
+                              <p>Максимальная выручка в месяц:  15 млн.руб.</p>
+                              <p>Количество сотрудников:  до 240</p>
+                              <p>Сумма доплаты за сотрудников сверх лимита:  +4000 руб. за 10 сотр.</p>
+                              <p>Максимальное количество операций в месяц:  до 1200</p>
+                              <p>Сумма доплаты за операции сверх лимита:  +6000 руб. за 100 опер.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <a href="#" data-toggle="modal" data-target="#order" class="accordion-promo__btn btn btn-primary disabled">Выбрать тариф</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -504,7 +991,7 @@
     </div>
   </div>
   <script src="js/script.min.js?1"></script>
-  <div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal modal--mini fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -540,7 +1027,7 @@
     </div>
   </div>
 
-  <div class="modal fade" id="callback-success" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal modal--mini fade" id="callback-success" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -583,6 +1070,90 @@
               </div>
             </div>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal--big fade" id="order" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <div class="hamburger hamburger--space open">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+
+        <div class="modal-order">
+          <div class="modal-order__info">
+            <div class="modal-header">
+              <div class="modal-title" id="exampleModalLabel">
+                Вы выбрали:
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="modal-order__block">
+                <div class="modal-order__tarif">Тарифный план</div>
+                <div class="modal-order__name">«Расширенный»</div>
+              </div>
+
+              <div class="modal-order__block">
+                <div class="modal-order__tarif">
+                  Предварительная стоимость
+
+                  <small>(с учетом скидки, НДС не облагается)</small>
+                </div>
+                <div class="modal-order__name">25 000 руб./мес.</div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-order__content">
+            <div class="modal-header">
+              <div class="modal-title" id="exampleModalLabel">
+                Оставьте заявку
+              </div>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control input input--profile" placeholder="Ваше имя">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control input input--callback" placeholder="Телефон">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control input input--mail" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                  <label>Комментарий</label>
+                  <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder=""></textarea>
+                </div>
+                <div class="form-group">
+                  <div class="form-mini">
+                    (*) –  отмечены поля, обязательные для заполнения
+                  </div>
+                  <button type="button" class="btn btn-primary toggle-message">
+                    Отправить
+                  </button>
+                </div>
+                <div class="modal-notification">
+                  <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <img src="img/success.svg" class="toast-img" alt="...">
+                      <div class="toast-description">
+                        <p class="">
+                          Ваше сообщение отправлено!  Мы ответим Вам в ближайшее время
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>

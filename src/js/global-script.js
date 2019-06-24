@@ -16,6 +16,7 @@ $(document).ready(function() {
 $(document).ready(function(){
   $('.toggle-menu').click(function(){
     $(this).toggleClass('open');
+    slideout.close();
   });
 });
 

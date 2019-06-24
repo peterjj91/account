@@ -36,6 +36,15 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    label {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      opacity: 0.8;
+      margin-top: 9px;
+      margin-bottom: 8px;
+    }
   }
 
   &-mini {
@@ -59,6 +68,16 @@
 }
 
 textarea.form-control {
+  background-color: #36373D;
   padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  height: 90px;
+  resize: none;
+
+  &:focus {
+    background-color: #36373D;
+  }
 }
