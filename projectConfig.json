@@ -44,7 +44,9 @@
     "calculate-promo": [],
     "table": [],
     "accordion": [],
-    "accordion-promo": []
+    "accordion-promo": [],
+    "about": [],
+    "promo-head": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
