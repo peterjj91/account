@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Результаты поиска</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+  @@include('blocks/slideout/slideout.html')
+
+  <div class="page__inner" id="main">
+    <header class="page-header" role="banner">
+      @@include('blocks/page-header/page-header.html')
+    </header>
+
+    <div class="page__content">
+      <main class="page__main-content" role="main">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Результаты поиска</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="article">
+          <div class="container">
+            <div class="h2 article__title article__title--search-result">Результаты поиска</div>
+
+            <div class="search-result">
+              <div class="search-result__input">
+                <div class="search search--result">
+                  <input type="text" class="search__input" placeholder="Поиск по сайту" class="">
+                  <button class="search__btn">
+                    <img src="img/search.svg" alt="">
+                  </button>
+                </div>
+              </div>
+
+              <div class="search-result__info">
+                <div class="search-result__info__text">
+                  Вы искали: <strong>Ищу информацию</strong>
+                </div>
+                <div class="search-result__info__count">
+                  Найдено упоминаний: 12
+                </div>
+              </div>
+
+              <ol class="search-result__list">
+                <li>
+                  <a href="#" class="search-result__card">
+                    <div class="search-result__card__title">Банковскую гарантию теперь можно отправить налоговикам через интернет</div>
+                    <div class="search-result__card__text">
+                      <p>Федеральной налоговой службой сформирован электронный тип банковских гарантий. В связи с этим теперь такой документ возможно прислать налоговым органам в <strong>электронном форме</strong> по интернету. Данные ищу информацию сведения были распространены ФНС РФ с помощью письма от 4 апреля 2019 года № ЕД-4-15/6183.</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="search-result__card">
+                    <div class="search-result__card__title">Банковскую гарантию теперь можно отправить налоговикам через интернет</div>
+                    <div class="search-result__card__text">
+                      <p>Федеральной налоговой службой сформирован электронный тип банковских гарантий. В связи с этим теперь такой документ возможно прислать налоговым органам в <strong>электронном форме</strong> по интернету. Данные ищу информацию сведения были распространены ФНС РФ с помощью письма от 4 апреля 2019 года № ЕД-4-15/6183.</p>
+                    </div>
+                  </a>
+                </li>
+              </ol>
+
+              <div class="search-result__page">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link page-link--arrow" href="#">
+                        <svg class="image__direction">
+                          <use xlink:href="img/sprite-svg.svg#icon-previous"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link page-link--arrow" href="#">
+                        <svg class="image__direction">
+                          <use xlink:href="img/sprite-svg.svg#icon-next"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    @@include('blocks/page-footer/page-footer.html')
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

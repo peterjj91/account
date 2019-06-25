@@ -1,0 +1,53 @@
+// В этом файле должны быть стили для БЭМ-блока page-error, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-error {
+
+  $block-name: &; // #{$block-name}__element {}
+  position: relative;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  &__content {
+    // position: absolute;
+    text-align: center;
+  }
+  
+  &__img {
+    margin-bottom: 50px;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: auto;
+    }
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #97A0B2;
+    margin-bottom: 80px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 21px;
+      line-height: 27px;
+    }
+  }
+
+  .btn {
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: auto;
+    }
+  }
+}

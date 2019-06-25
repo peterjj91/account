@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Контакты</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+  @@include('blocks/slideout/slideout.html')
+
+  <div class="page__inner" id="main">
+    <header class="page-header" role="banner">
+      @@include('blocks/page-header/page-header.html')
+    </header>
+
+    <div class="page__content">
+      <main class="page__main-content" role="main">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="article">
+          <div class="container">
+            <div class="h2 article__title article__title--contacts">Контакты</div>
+
+            <div class="contacts">
+              <div class="contacts__row">
+                <div class="contacts__description">
+                  <div class="h3 contacts__description__title">ООО «Центр бухгалтерских услуг»</div>
+
+                  <div class="contacts__block">
+                    <div class="contacts__title">Центральный офис в Москве</div>
+                    <p><strong>Адрес:</strong> 142784, г. Москва, поселение Московский, 22-ой км. Киевского шоссе, домовладение 4, стр. 5, пом. 8-103-2</p>
+                    <p><strong>Телефон:</strong> 8 (495) 723-70-49</p>
+                    <p><strong>E-mail:</strong> <a href="mailto:info@cbu-online.ru">info@cbu-online.ru</a></p>
+                  </div>
+
+                  <div class="contacts__block">
+                    <div class="contacts__row">
+                      <div class="contacts__item">
+                        <div class="contacts__title">Краснодар</div>
+                        <p><strong>Адрес:</strong> 142784, г. Москва, поселение Московский, 22-ой км. Киевского шоссе, домовладение 4, стр. 5, пом. 8-103-2</p>
+                        <p><strong>Телефон:</strong> 8 (800) 987-65-43</p>
+                        <p><strong>E-mail:</strong> <a href="mailto:info@cbu-online.ru ">info@cbu-online.ru </a></p>
+                      </div>
+                      <div class="contacts__item">
+                        <div class="contacts__title">Уфа</div>
+                        <p><strong>Адрес:</strong> 142784, г. Москва, поселение Московский, 22-ой км. Киевского шоссе, домовладение 4, стр. 5, пом. 8-103-2</p>
+                        <p><strong>Телефон:</strong> 8 (800) 987-65-43</p>
+                        <p><strong>E-mail:</strong> <a href="mailto:info@cbu-online.ru">info@cbu-online.ru</a></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="contacts__block">
+                    <div class="contacts__title">Омск</div>
+                    <p><strong>Адрес:</strong> 142784, г. Москва, поселение Московский, 22-ой км. Киевского шоссе, домовладение 4, стр. 5, пом. 8-103-2</p>
+                    <p><strong>Телефон:</strong> 8 (800) 987-65-43</p>
+                    <p><strong>E-mail:</strong> <a href="mailto:info@cbu-online.ru">info@cbu-online.ru </a></p>
+                  </div>
+                </div>
+                <div class="contacts__side">
+                  <div class="modal-dialog modal-dialog--contact">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div class="modal-title" id="exampleModalLabel">
+                          Перезвоните мне
+                        </div>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <input type="text" class="form-control input input--profile" placeholder="Ваше имя">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control input input--callback" placeholder="Телефон">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control input input--mail" placeholder="E-mail">
+                          </div>
+                          <div class="form-group">
+                            <label>Комментарий</label>
+                            <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder=""></textarea>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-mini">
+                              (*) –  отмечены поля, обязательные для заполнения
+                            </div>
+                            <button type="button" class="btn btn-primary toggle-message">
+                              Отправить
+                            </button>
+                          </div>
+                          <div class="modal-notification">
+                            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                              <div class="toast-header">
+                                <img src="img/success.svg" class="toast-img" alt="...">
+                                <div class="toast-description">
+                                  <p class="">
+                                    Ваше сообщение отправлено!  Мы ответим Вам в ближайшее время
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contacts__block">
+                <div class="contacts__title h3">ООО «Центр бухгалтерских услуг»</div>
+
+                <div class="contacts__title">ООО «ЦБУ»</div>
+
+                <div class="contacts__table">
+                  <div class="contacts__table__row">
+                    <div class="contacts__table__title">
+                      Юридический адрес 
+                    </div>
+                    <div class="contacts__table__text">
+                      108811, РФ, г. Москва, п. Московский, 22-й км Киевского ш.,  вл.4 стр.5
+                    </div>
+                  </div>
+                  <div class="contacts__table__row">
+                    <div class="contacts__table__title">
+                      ИНН
+                    </div>
+                    <div class="contacts__table__text">
+                      7728563668
+                    </div>
+                  </div>
+                  <div class="contacts__table__row">
+                    <div class="contacts__table__title">
+                      КПП
+                    </div>
+                    <div class="contacts__table__text">
+                      770401001
+                    </div>
+                  </div>
+                  <div class="contacts__table__row">
+                    <div class="contacts__table__title">
+                      ОГРН
+                    </div>
+                    <div class="contacts__table__text">
+                      1057748914178
+                    </div>
+                  </div>
+                  <div class="contacts__table__row">
+                    <div class="contacts__table__title">
+                      ОКПО
+                    </div>
+                    <div class="contacts__table__text">
+                      79443947
+                    </div>
+                  </div>
+                  <div class="contacts__table__row">
+                    <div class="contacts__table__title">
+                      Расчетный счет
+                    </div>
+                    <div class="contacts__table__text">
+                      40702810500482000759 ПАО «БАНК УРАЛСИБ» г. Москва
+                    </div>
+                  </div>
+                  <div class="contacts__table__row">
+                    <div class="contacts__table__title">
+                      БИК
+                    </div>
+                    <div class="contacts__table__text">
+                      044525787
+                    </div>
+                  </div>
+                  <div class="contacts__table__row">
+                    <div class="contacts__table__title">
+                      Корреспондентский счет
+                    </div>
+                    <div class="contacts__table__text">
+                      30101810100000000787
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+    </div>
+
+    @@include('blocks/page-footer/page-footer.html')
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

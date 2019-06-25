@@ -1,0 +1,137 @@
+// В этом файле должны быть стили для БЭМ-блока contacts, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.contacts {
+
+  $block-name: &; // #{$block-name}__element {}
+
+  &__row {
+    @include media-breakpoint-up(lg) {
+      display: flex;
+    }
+  }
+
+  &__description {
+    margin-bottom: 59px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: 32px;
+      }
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 21px;
+      color: #252528;
+      margin-bottom: 14px;
+
+      @include media-breakpoint-up(md) {
+      }
+    }
+  }
+
+  &__side {
+    margin-bottom: 50px;
+
+    @include media-breakpoint-up(lg) {
+      flex: 0 0 400px;
+      margin-left: 40px;
+    }
+
+    .modal-dialog {
+      max-width: 100%;
+    }
+  }
+
+  &__block {
+    margin-bottom: 46px;
+
+    @include media-breakpoint-up(md) {
+
+    }
+
+    #{$block-name}__row {
+      @include media-breakpoint-down(lg) {
+        display: block;
+        
+      }
+    }
+  }
+
+  &__item {
+    
+    &:first-child {
+      @include media-breakpoint-up(md) {
+        padding-right: 20px;
+        margin-bottom: 46px;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #252528;
+    margin-bottom: 14px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &__table {
+    @include media-breakpoint-up(md) {
+      
+    }
+
+    &__row {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba(151, 160, 178, 0.3);
+
+      @include media-breakpoint-up(md) {
+        display: flex;
+        padding-top: 8px;
+        padding-bottom: 9px;
+      }
+
+      &:first-child {
+        border-top: 1px solid rgba(151, 160, 178, 0.3);
+      }
+    }
+
+    &__title {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: #252528;
+
+      @include media-breakpoint-up(md) {
+        flex: 0 0 236px;
+        font-size: 15px;
+        line-height: 21px;
+      }
+    }
+
+    &__text {
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 21px;
+      color: #252528;
+
+      @include media-breakpoint-up(md) {
+
+      }
+    }
+  }
+}

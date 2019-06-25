@@ -1,0 +1,22 @@
+// В этом файле должны быть стили для БЭМ-блока news-catalog, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.news-catalog {
+
+  $block-name: &; // #{$block-name}__element {}
+
+  &__block {
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__page {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+  }
+}

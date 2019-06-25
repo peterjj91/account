@@ -15,12 +15,6 @@
   &:hover {
     background-color: $color-ocean;
     cursor: pointer;
-
-    #{$block-name} {
-      &-text {
-        // text-decoration: underline;
-      }
-    }
   }
   
   &-body {
@@ -204,6 +198,71 @@
 
         @include media-breakpoint-up(md) {
           right: 30px;
+        }
+      }
+    }
+  }
+
+  &--light {
+    background-color: white;
+    border: 1px solid rgba(151, 160, 178, 0.15);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    // font-family: $montserrat;
+
+    &:hover {
+      #{$block-name} {
+        &-subtitle {
+          color: rgba(255, 255, 255, 0.7);
+        }
+        &-title {
+          color: white;
+        }
+        &-text {
+          color: white;
+        }
+      }
+    }
+
+    #{$block-name} {
+      &-body {
+        // padding: 31px 24px 34px 24px;
+        @include media-breakpoint-down(md) {
+          padding: 31px 24px 23px 24px;
+        }
+        @include media-breakpoint-up(md) {
+          // padding: 34px 23px 30px 23px;
+          padding-bottom: 27px;
+        }
+      }
+      &-subtitle {
+        color: #97A0B2;
+        margin-bottom: 23px;
+      }
+      &-title {
+        font-weight: bold;
+        color: #252528;
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 10px;
+        font-family: $montserrat;
+        
+        @include media-breakpoint-down(md) {
+        }
+        @include media-breakpoint-up(md) {
+          font-size: 17px;
+          line-height: 25px;
+        }
+      }
+      &-text {
+        display: none;
+        color: rgba(81, 81, 83, 0.8);
+        font-size: 18px;
+        line-height: 27px;
+
+        @include media-breakpoint-up(md) {
+          display: block;
+          
         }
       }
     }

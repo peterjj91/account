@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Карта сайта</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+  @@include('blocks/slideout/slideout.html')
+
+  <div class="page__inner" id="main">
+    <header class="page-header" role="banner">
+      @@include('blocks/page-header/page-header.html')
+    </header>
+
+    <div class="page__content">
+      <main class="page__main-content" role="main">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Карта сайта</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="article">
+          <div class="container">
+            <div class="h2 article__title">Карта сайта</div>
+            
+            <div class="article__offer">
+              <ul class="list-style">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="service.html">Услуги</a></li>
+                <li><a href="price.html">Цены</a></li>
+                <li><a href="about.html">О компании</a>
+                  <ul>
+                    <li><a href="clients.html">Клиенты</a></li> 
+                    <li><a href="reviews.html">Отзывы</a></li> 
+                  </ul>
+                </li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="search.html">Результаты поиска</a></li>
+                <li><a href="public-offerta.html">Публичная оферта</a></li>
+                <li><a href="confidence.html">Политика конфиденциальности</a></li>
+                <li><a href="agree.html">Пользовательское соглашение</a></li>
+                <li><a href="">Положение об ответственности</a></li>
+                <li><a href="">Памятка Клиенту</a></li>
+                <li><a href="">Страховой полис</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    @@include('blocks/page-footer/page-footer.html')
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

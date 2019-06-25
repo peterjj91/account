@@ -26,6 +26,8 @@
 
     @include media-breakpoint-up(md) {
       @include make-col(8);
+      padding-left: 15px;
+      padding-right: 15px;
       margin-bottom: 0;
     }
 
@@ -50,7 +52,7 @@
     
     @include media-breakpoint-up(md) {
       height: auto;
-      margin-top: 58px;
+      margin-top: 55px;
       margin-left: -20px;
       margin-right: -2px;
       margin-bottom: -1px;
@@ -83,8 +85,12 @@
   }
 
   &__quote {
+    padding-left: 50px;
+
     @include media-breakpoint-up(md) {
       @include make-col(4);
+      padding-right: 15px;
+      padding-left: 50px;
     }
   }
 }

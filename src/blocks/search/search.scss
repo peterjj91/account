@@ -46,4 +46,34 @@
       // height: 14px;
     }
   }
+
+  &--result {
+    @include media-breakpoint-up(md) {
+    }
+
+    #{$block-name} {
+      &__input {
+        background-color: #F0F1F4;
+        height: 60px;
+        font-size: 16px;
+        line-height: 20px;
+        color: #97A0B2;
+        padding-left: 30px;
+
+        @include media-breakpoint-up(md) {
+          
+        }
+      }
+      &__btn {
+        right: 24px;
+        
+        @include media-breakpoint-up(md) {
+        }
+
+        img {
+          width: 22px;
+        }
+      }
+    }
+  }
 }

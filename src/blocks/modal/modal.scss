@@ -93,7 +93,8 @@
     z-index: -10;
     position: absolute;
     transform: translate(0%, -50%);
-    top: 50%;
+    // top: 50%;
+    top: auto;
     left: 0px;
     margin: 0px 10px;
 
@@ -103,6 +104,10 @@
       left: 0px;
       right: 0px;
       bottom: 39px;
+    }
+
+    .toast {
+      width: 100%;
     }
 
     &.active {
@@ -255,6 +260,63 @@
       &-content {
         padding: 0px 0px;
       }
+    }
+  }
+
+  &-dialog--contact {
+    #{$block-name} {
+      &-content {
+        padding: 41px 20px 10px 20px;
+
+        @include media-breakpoint-up(md) {
+          padding: 41px 40px 10px 40px;
+        }
+      }
+      &-header {
+        margin-bottom: 28px;
+
+        @include media-breakpoint-up(md) {
+
+        }
+      }
+      &-title {
+        color: white;
+      }
+      &-body {
+
+      }
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: 29px;
+      }
+    }
+
+    textarea {
+      height: 90px;
+
+      @include media-breakpoint-up(md) {
+        height: 140px;
+      }
+    }
+
+    label {
+      color: rgba(255,255,255,0.4);
+    }
+
+    .form-mini {
+      padding-top: 2px;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 0px;
+      }
+    }
+
+    .btn {
+      width: 100%;
     }
   }
 }

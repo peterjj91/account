@@ -1,0 +1,140 @@
+// В этом файле должны быть стили для БЭМ-блока review, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.review {
+
+  $block-name: &; // #{$block-name}__element {}
+  
+  &__row {
+    @include media-breakpoint-up(lg) {
+      @include make-row;
+    }
+  }
+
+  &__block {
+    margin-bottom: 30px;
+    
+    @include media-breakpoint-up(sm) {
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(6);
+      padding: 0px 15px;
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      color: #515153;
+    }
+  }
+
+  &__item {
+    background: #FFFFFF;
+    border: 1px solid rgba(151, 160, 178, 0.15);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+  }
+
+  &__header {
+    height: 100px;
+    border-bottom: 1px solid rgba(151, 160, 178, 0.3);
+    padding: 10px 40px 10px 28px;
+
+    @include media-breakpoint-up(sm) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__body {
+    padding: 21px 30px 28px 27px;
+    font-family: $proximaNova-regular;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #515153;
+
+    p {
+      margin: 0;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      color: #515153;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 130%;
+    color: $color-space;
+  }
+
+  &__footer {
+    // padding: 30px 0px 0px 0px;
+    // display: flex;
+    // justify-content: space-between;
+
+    &__link {
+      font-family: $montserrat;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      border-bottom: 1px dotted;
+      text-decoration: none;
+      display: inline-block;
+      vertical-align: top;
+
+      &--thank {
+        color: $color-ocean;
+      }
+
+      &--less {
+        display: none;
+        color: $color-lighter;
+        position: absolute;
+        bottom: -47px;
+        right: 10px !important;
+      }
+
+      &--more {
+        position: absolute;
+        bottom: -47px;
+        right: 10px !important;
+        color: $color-lighter;
+      }
+    }
+  }
+}
+
+.truncable-txt {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.trigger-js {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.read-less,
+.read-more {
+  display: none;
+}
+
+.read-more__txt,
+.read-less__txt {
+  text-decoration: underline;
+}
+
+.truncable-txt--is-truncated .read-more,
+.truncable-txt--is-not-truncated .read-less {
+  display: inline-block !important;
+}

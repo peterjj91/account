@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Результаты поиска - не найдено</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+  @@include('blocks/slideout/slideout.html')
+
+  <div class="page__inner" id="main">
+    <header class="page-header" role="banner">
+      @@include('blocks/page-header/page-header.html')
+    </header>
+
+    <div class="page__content">
+      <main class="page__main-content" role="main">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Результаты поиска</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="article">
+          <div class="container">
+            <div class="h2 article__title article__title--search-result">Результаты поиска</div>
+
+            <div class="search-result">
+              <div class="search-result__input">
+                <div class="search search--result">
+                  <input type="text" class="search__input" placeholder="Поиск по сайту" class="">
+                  <button class="search__btn">
+                    <img src="img/search.svg" alt="">
+                  </button>
+                </div>
+              </div>
+
+              <div class="search-result__info">
+                <div class="search-result__info__text">
+                  Вы искали: <strong>Ищу информацию</strong>
+                </div>
+              </div>
+
+              <div class="search-result__not-found">
+                Ничего не найдено, попробуйте изменить запрос.
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    @@include('blocks/page-footer/page-footer.html')
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

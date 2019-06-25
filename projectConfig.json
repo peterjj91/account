@@ -46,7 +46,15 @@
     "accordion": [],
     "accordion-promo": [],
     "about": [],
-    "promo-head": []
+    "promo-head": [],
+    "review": [],
+    "clients": [],
+    "news-catalog": [],
+    "news-card": [],
+    "contacts": [],
+    "search-result": [],
+    "site-map": [],
+    "page-error": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -69,7 +77,8 @@
     "./node_modules/bootstrap-select/dist/js/bootstrap-select.js",
     "./node_modules/slideout/dist/slideout.js",
     "./node_modules/nouislider/distribute/nouislider.js",
-    "./node_modules/wnumb/wNumb.js"
+    "./node_modules/wnumb/wNumb.js",
+    "src/js/jquery.dotdotdot.js"
   ],
   "addJsAfter": [
     "./src/js/global-script.js"

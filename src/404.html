@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>404 error</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+  @@include('blocks/slideout/slideout.html')
+
+  <div class="page__inner" id="main">
+    <header class="page-header" role="banner">
+      @@include('blocks/page-header/page-header.html')
+    </header>
+
+    <div class="page__content">
+      <main class="page__main-content page__main-content--error-page" role="main">
+        <div class="page-error">
+          <div class="page-error__content">
+            <div class="container">
+              <img src="img/404.svg" class="page-error__img" alt="">
+
+              <p>Ууупс! Страница не найдена или была удалена</p>
+
+              <a href="index.html" class="btn btn-primary">Вернуться на главную</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- @@include('blocks/page-footer/page-footer.html') -->
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>
