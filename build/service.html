@@ -7,6 +7,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <link href="css/style.min.css?1" rel="stylesheet" media="screen">
 
@@ -148,34 +149,34 @@
 
                   <ul class="list-style">
                     <li>
-                      Отражение операций на счетах бухгалтерского учета:
+                      Отражение операций на&nbsp;счетах бухгалтерского учета:
                       <ul>
-                        <li>учет операций с МПЗ</li>
-                        <li>учет операций с внеоборотными активами</li>
+                        <li>учет операций с&nbsp;МПЗ</li>
+                        <li>учет операций с&nbsp;внеоборотными активами</li>
                         <li>учет движения денежных средств</li>
-                        <li>учет расчетов с дебиторами/кредиторами</li>
+                        <li>учет расчетов с&nbsp;дебиторами/кредиторами</li>
                         <li>учет финансовых вложений</li>
                         <li>учет полученных кредитов, займов</li>
                         <li>учет расчетов по обязательным платежам</li>
-                        <li>учет расчетов с персоналом</li>
+                        <li>учет расчетов с&nbsp;персоналом</li>
                         <li>учет капитала</li>
                         <li>учет финансовых результатов деятельности</li>
-                        <li>учет операций на забалансовых счетах</li>
+                        <li>учет операций на&nbsp;забалансовых счетах</li>
                       </ul>
                     </li>
-                    <li>Расчет, начисление налогов и взносов, формирование налоговых регистров</li>
-                    <li>Подготовка и сдача обязательной отчетности в налоговые органы и внебюджетные фонды</li>
+                    <li>Расчет, начисление налогов и&nbsp;взносов, формирование налоговых регистров</li>
+                    <li>Подготовка и&nbsp;сдача обязательной отчетности в&nbsp;налоговые органы и&nbsp;внебюджетные фонды</li>
                     <li>Сопровождение ВЭД</li>
-                    <li>Формирование бухгалтерских  и первичных документов</li>
-                    <li>Формирование плана счетов  и учетной политики</li>
+                    <li>Формирование бухгалтерских и&nbsp;первичных документов</li>
+                    <li>Формирование плана счетов и&nbsp;учетной политики</li>
                     <li>Расчет заработной платы</li>
                     <li>
                       Кадровое делопроизводство:
                       <ul>
-                        <li>оформление договорных отношений с работниками</li>
+                        <li>оформление договорных отношений с&nbsp;работниками</li>
                         <li>сопровождение штатного расписания</li>
-                        <li>оформление и регистрация приказов по личному составу</li>
-                        <li>формирование и ведение личных дел сотрудников</li>
+                        <li>оформление и&nbsp;регистрация приказов по&nbsp;личному составу</li>
+                        <li>формирование и&nbsp;ведение личных дел сотрудников</li>
                         <li>учет рабочего времени сотрудников (отпуска, больничные, командировки)</li>
                       </ul>
                     </li>
@@ -188,7 +189,7 @@
 
                   <ul class="list-style">
                     <li>
-                      Поддержка по вопросам налогообложения  и бухгалтерского учета:
+                      Поддержка по&nbsp;вопросам налогообложения и&nbsp;бухгалтерского учета:
                       <ul>
                         <li>консультационная помощь в оптимизации налоговой нагрузки</li>
                         <li>подготовка ответов по запросам налоговой инспекции</li>
@@ -216,10 +217,10 @@
                   <div class="h3 service__title">Бизнес-ассистент</div>
 
                   <ul class="list-style">
-                    <li>Подготовка платежных поручений  в интернет-банке и напоминание  о платежах</li>
+                    <li>Подготовка платежных поручений в&nbsp;интернет-банке и&nbsp;напоминание о&nbsp;платежах</li>
                     <li>Помощь во взаимодействии с банками по вопросам текущей деятельности компании</li>
-                    <li>Помощь при выборе и сборе документов по банковским услугам:</li>
                     <li>
+                      Помощь при выборе и сборе документов по банковским услугам:
                       <ul>
                         <li>зарплатные проекты</li>
                         <li>депозиты</li>
@@ -317,7 +318,7 @@
 
                 <div class="page-footer__search">
                   <div class="search">
-                    <input type="text" class="search__input">
+                    <input type="text" class="search__input" placeholder="Введите текст для поиска">
                     <button class="search__btn">
                       <img src="img/search.svg" alt="">
                     </button>
@@ -355,10 +356,18 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <input type="text" class="form-control input input--profile" placeholder="Ваше имя">
+              <div class="material">
+                <input type="text" class="input input--profile" autocomplete="off" required>
+                <hr>
+                <label>Ваше имя</label>
+              </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control input input--callback" placeholder="Телефон">
+              <div class="material">
+                <input type="text" class="input input--callback" required>
+                <hr>
+                <label>Телефон</label>
+              </div>
             </div>
             <div class="form-group">
               <div class="form-mini">
@@ -391,10 +400,18 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <input type="text" class="form-control input input--profile" placeholder="Ваше имя">
+              <div class="material">
+                <input type="text" class="input input--profile" autocomplete="off" required>
+                <hr>
+                <label>Ваше имя</label>
+              </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control input input--callback" placeholder="Телефон">
+              <div class="material">
+                <input type="text" class="input input--callback" required>
+                <hr>
+                <label>Телефон</label>
+              </div>
             </div>
             <div class="form-group">
               <div class="form-mini">
@@ -408,7 +425,8 @@
                   <img src="img/success.svg" class="toast-img" alt="...">
                   <div class="toast-description">
                     <p class="">
-                      Ваше сообщение отправлено!  Мы ответим Вам в ближайшее время
+                      Ваша заявка отправлена! <br />
+                      Мы&nbsp;перезвоним Вам в&nbsp;ближайшее время
                     </p>
                   </div>
                 </div>
@@ -464,13 +482,25 @@
             <div class="modal-body">
               <form>
                 <div class="form-group">
-                  <input type="text" class="form-control input input--profile" placeholder="Ваше имя">
+                  <div class="material">
+                    <input type="text" class="input input--profile" autocomplete="off" required>
+                    <hr>
+                    <label>Ваше имя</label>
+                  </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control input input--callback" placeholder="Телефон">
+                  <div class="material">
+                    <input type="text" class="input input--callback" required>
+                    <hr>
+                    <label>Телефон</label>
+                  </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control input input--mail" placeholder="E-mail">
+                  <div class="material">
+                    <input type="text" class="input input--mail" required>
+                    <hr>
+                    <label>E-mail</label>
+                  </div>
                 </div>
                 <div class="form-group">
                   <label>Комментарий</label>
@@ -490,7 +520,8 @@
                       <img src="img/success.svg" class="toast-img" alt="...">
                       <div class="toast-description">
                         <p class="">
-                          Ваше сообщение отправлено!  Мы ответим Вам в ближайшее время
+                          Ваша заявка отправлена! <br />
+                          Мы&nbsp;перезвоним Вам в&nbsp;ближайшее время
                         </p>
                       </div>
                     </div>

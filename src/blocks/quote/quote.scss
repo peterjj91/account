@@ -5,6 +5,7 @@
 .quote {
 
   $block-name: &; // #{$block-name}__element {}
+  display: inline;
   font-weight: 500;
   font-size: 15px;
   line-height: 160%;
@@ -14,9 +15,13 @@
   @include media-breakpoint-up(md) {
     font-size: 18px;
     line-height: 25px;
+    padding-right: 30px;
   }
 
   &:before, &:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
     width: 22px;
     height: 19.22px;
     background-size: contain;
@@ -29,26 +34,19 @@
   }
 
   &:before {
-    content: "";
-    display: inline-block;
     background-image: url(../img/quote-left.png);
-    width: 22px;
-    height: 19.22px;
-    margin-bottom: -5px;
-    margin-left: -44px;
+    left: -32px;
+    top: -2px;
 
-    @include media-breakpoint-up(md) {
-      position: absolute;
-      top: 0px;
-      left: -38px;
-      margin-bottom: 0;
-      margin-left: 0;
-    }
+    @include media-breakpoint-up(md) {}
   }
   &:after {
-    content: "";
-    display: inline-block;
     background-image: url(../img/quote-right.png);
-    margin-bottom: -5px;
+    bottom: 0px;
+    right: -28px;
+
+    @include media-breakpoint-up(md) {
+      right: -3px;
+    }
   }
 }

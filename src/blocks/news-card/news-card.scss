@@ -29,6 +29,10 @@
       line-height: 22px;
       color: #252528;
     }
+
+    &--sub-title {
+      padding-left: 19px;
+    }
   }
 
   .list-style {
@@ -88,10 +92,15 @@
 
     a {
       text-decoration: none;
+
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
     }
 
     img {
       margin-right: 10px;
+      vertical-align: baseline;
     }
   }
 }

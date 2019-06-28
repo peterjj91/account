@@ -38,31 +38,61 @@
   }
 
   &__header {
-    height: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
     border-bottom: 1px solid rgba(151, 160, 178, 0.3);
-    padding: 10px 40px 10px 28px;
+    padding: 21px 20px 20px 20px;
 
     @include media-breakpoint-up(sm) {
-      display: flex;
+      flex-direction: row;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 29px;
+      padding-right: 28px;
+      height: 100px;
       justify-content: space-between;
       align-items: center;
     }
   }
 
+  &__logo {
+    margin-bottom: 18px;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 0;
+    }
+  }
+
   &__body {
-    padding: 21px 30px 28px 27px;
+    padding: 21px 10px 25px 14px;
     font-family: $proximaNova-regular;
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
     color: #515153;
+    text-align: center;
+    
 
-    p {
+    @include media-breakpoint-up(sm) {
+      padding: 21px 30px 28px 27px;
+      text-align: left;
+    }
+
+    p, .truncable-txt {
       margin: 0;
       font-weight: normal;
-      font-size: 16px;
-      line-height: 150%;
+      font-size: 15px;
+      line-height: 23px;
       color: #515153;
+      padding-bottom: 30px;
+      text-align: left;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 16px;
+        line-height: 150%;
+        padding-bottom: 27px;
+      }
     }
   }
 
@@ -94,21 +124,44 @@
 
       &--thank {
         color: $color-ocean;
+        margin-top: 18px;
+
+        @include media-breakpoint-up(sm) {
+          margin-top: 0;
+        }
       }
 
       &--less {
         display: none;
-        color: $color-lighter;
         position: absolute;
-        bottom: -47px;
-        right: 10px !important;
+        color: $color-lighter;
+        transform: translate(-50%, 0%);
+        left: 50%;
+        bottom: 0px;
+        white-space: nowrap;
+
+        @include media-breakpoint-up(sm) {
+          transform: none;
+          left: auto;
+          bottom: -19px;
+          right: 10px !important;
+        }
       }
 
       &--more {
         position: absolute;
-        bottom: -47px;
-        right: 10px !important;
         color: $color-lighter;
+        transform: translate(-50%, 0%);
+        left: 50%;
+        bottom: 0px;
+        white-space: nowrap;
+
+        @include media-breakpoint-up(sm) {
+          transform: none;
+          left: auto;
+          bottom: -19px;
+          right: 10px !important;
+        }
       }
     }
   }

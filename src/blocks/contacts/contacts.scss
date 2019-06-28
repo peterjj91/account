@@ -14,6 +14,7 @@
 
   &__description {
     margin-bottom: 59px;
+    width: 100%;
 
     @include media-breakpoint-up(md) {
       margin-bottom: 30px;
@@ -64,6 +65,13 @@
         
       }
     }
+
+    &--half {
+
+      @include media-breakpoint-up(xl) {
+        max-width: 50%;
+      }
+    }
   }
 
   &__item {
@@ -90,7 +98,7 @@
   }
 
   &__table {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       
     }
 

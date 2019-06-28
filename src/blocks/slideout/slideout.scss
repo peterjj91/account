@@ -3,12 +3,14 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 256px;
+  width: 100%;
   min-height: 100vh;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   z-index: 0;
-  display: none;
+  display: block !important;
+  z-index: 10;
+  transition: all .15s ease-in-out;
 }
 
 .slideout-menu-left {
@@ -17,6 +19,7 @@
 
 .slideout-menu-right {
   right: 0;
+  transform: translateX(100%);
 }
 
 .slideout-panel {
@@ -35,22 +38,14 @@
 
 .slideout-open {
   .slideout-menu {
-    display: block;
+    right: 0px;
+    z-index: 10;
+    transform: translateX(0%);
+  }
+
+  .slideout-panel {
+    transform: none !important;
   }
 }
 
-.slideout-panel-left:before {
-  // content: '';
-  // display: block;
-  // background-color: rgba(0,0,0,0);
-  // transition: background-color 0.5s ease-in-out;
-}
 
-.panel-open:before {
-  // position: absolute;
-  // top: 0;
-  // bottom: 0;
-  // width: 100%;
-  // background-color: rgba(0,0,0,.5);
-  // z-index: 99;
-}

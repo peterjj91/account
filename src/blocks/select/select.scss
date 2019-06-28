@@ -22,7 +22,9 @@
       border-top: 6px solid;
       border-right: 4px solid transparent;
       border-left: 4px solid transparent;
+      opacity: 0.5;
       margin-right: -13px;
+      margin-top: -2px;
     }
 
     &:focus {
@@ -37,6 +39,7 @@
     border-radius: 0px 0px 4px 4px;
     margin-top: 0;
     border: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 
     li {
       a {
@@ -69,6 +72,8 @@
   }
 
   &.show {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    
     & > .btn-light.dropdown-toggle {
       background-color: white;
     }

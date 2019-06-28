@@ -1,9 +1,123 @@
-// В этом файле должны быть стили для БЭМ-блока sprite-png, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$icon-next-active-name: 'icon-next-active';
+$icon-next-active-x: 13px;
+$icon-next-active-y: 0px;
+$icon-next-active-offset-x: -13px;
+$icon-next-active-offset-y: 0px;
+$icon-next-active-width: 8px;
+$icon-next-active-height: 13px;
+$icon-next-active-total-width: 33px;
+$icon-next-active-total-height: 30px;
+$icon-next-active-image: '../img/sprite-05628590643218667.png';
+$icon-next-active: (13px, 0px, -13px, 0px, 8px, 13px, 33px, 30px, '../img/sprite-05628590643218667.png', 'icon-next-active', );
+$icon-next-name: 'icon-next';
+$icon-next-x: 25px;
+$icon-next-y: 0px;
+$icon-next-offset-x: -25px;
+$icon-next-offset-y: 0px;
+$icon-next-width: 8px;
+$icon-next-height: 13px;
+$icon-next-total-width: 33px;
+$icon-next-total-height: 30px;
+$icon-next-image: '../img/sprite-05628590643218667.png';
+$icon-next: (25px, 0px, -25px, 0px, 8px, 13px, 33px, 30px, '../img/sprite-05628590643218667.png', 'icon-next', );
+$icon-previous-active-name: 'icon-previous-active';
+$icon-previous-active-x: 0px;
+$icon-previous-active-y: 0px;
+$icon-previous-active-offset-x: 0px;
+$icon-previous-active-offset-y: 0px;
+$icon-previous-active-width: 9px;
+$icon-previous-active-height: 13px;
+$icon-previous-active-total-width: 33px;
+$icon-previous-active-total-height: 30px;
+$icon-previous-active-image: '../img/sprite-05628590643218667.png';
+$icon-previous-active: (0px, 0px, 0px, 0px, 9px, 13px, 33px, 30px, '../img/sprite-05628590643218667.png', 'icon-previous-active', );
+$icon-previous-name: 'icon-previous';
+$icon-previous-x: 0px;
+$icon-previous-y: 17px;
+$icon-previous-offset-x: 0px;
+$icon-previous-offset-y: -17px;
+$icon-previous-width: 8px;
+$icon-previous-height: 13px;
+$icon-previous-total-width: 33px;
+$icon-previous-total-height: 30px;
+$icon-previous-image: '../img/sprite-05628590643218667.png';
+$icon-previous: (0px, 17px, 0px, -17px, 8px, 13px, 33px, 30px, '../img/sprite-05628590643218667.png', 'icon-previous', );
+$spritesheet-width: 33px;
+$spritesheet-height: 30px;
+$spritesheet-image: '../img/sprite-05628590643218667.png';
+$spritesheet-sprites: ($icon-next-active, $icon-next, $icon-previous-active, $icon-previous, );
+$spritesheet: (33px, 30px, '../img/sprite-05628590643218667.png', $spritesheet-sprites, );
 
-.sprite-png {
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
 
-  $block-name: &; // #{$block-name}__element {}
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
 
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
 }

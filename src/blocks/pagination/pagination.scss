@@ -59,7 +59,7 @@
       background-color: transparent;
     }
 
-    &--arrow {
+    &__arrow {
       min-width: 40px;
       text-align: center;
       background-color: $color-shadow;
@@ -73,9 +73,11 @@
       &:hover {
         background-color: $color-ocean;
 
-        svg {
-          fill: $color-ocean;
-          stroke: white;
+        .icon-prev {
+          @include sprite($icon-previous-active);
+        }
+        .icon-next {
+          @include sprite($icon-next-active);
         }
       }
     }

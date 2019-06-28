@@ -2,15 +2,19 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.image {
+.icon {
 
   $block-name: &; // #{$block-name}__element {}
 
-  &__direction {
-    width: 8px;
-    height: 13px;
-    stroke: #9B9CA0;
-    stroke-width: 1.5;
-    fill: transparent;
+  &-prev {
+    @include sprite($icon-previous);
+    display: inline-block;
+    
+  }
+
+  &-next {
+    @include sprite($icon-next);
+    display: inline-block;
+    
   }
 }

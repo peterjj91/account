@@ -7,6 +7,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <link href="css/style.min.css?1" rel="stylesheet" media="screen">
 
@@ -210,7 +211,7 @@
 
                 <div class="page-footer__search">
                   <div class="search">
-                    <input type="text" class="search__input">
+                    <input type="text" class="search__input" placeholder="Введите текст для поиска">
                     <button class="search__btn">
                       <img src="img/search.svg" alt="">
                     </button>
@@ -248,10 +249,18 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <input type="text" class="form-control input input--profile" placeholder="Ваше имя">
+              <div class="material">
+                <input type="text" class="input input--profile" autocomplete="off" required>
+                <hr>
+                <label>Ваше имя</label>
+              </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control input input--callback" placeholder="Телефон">
+              <div class="material">
+                <input type="text" class="input input--callback" required>
+                <hr>
+                <label>Телефон</label>
+              </div>
             </div>
             <div class="form-group">
               <div class="form-mini">
@@ -284,10 +293,18 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <input type="text" class="form-control input input--profile" placeholder="Ваше имя">
+              <div class="material">
+                <input type="text" class="input input--profile" autocomplete="off" required>
+                <hr>
+                <label>Ваше имя</label>
+              </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control input input--callback" placeholder="Телефон">
+              <div class="material">
+                <input type="text" class="input input--callback" required>
+                <hr>
+                <label>Телефон</label>
+              </div>
             </div>
             <div class="form-group">
               <div class="form-mini">
@@ -301,7 +318,8 @@
                   <img src="img/success.svg" class="toast-img" alt="...">
                   <div class="toast-description">
                     <p class="">
-                      Ваше сообщение отправлено!  Мы ответим Вам в ближайшее время
+                      Ваша заявка отправлена! <br />
+                      Мы&nbsp;перезвоним Вам в&nbsp;ближайшее время
                     </p>
                   </div>
                 </div>
@@ -357,13 +375,25 @@
             <div class="modal-body">
               <form>
                 <div class="form-group">
-                  <input type="text" class="form-control input input--profile" placeholder="Ваше имя">
+                  <div class="material">
+                    <input type="text" class="input input--profile" autocomplete="off" required>
+                    <hr>
+                    <label>Ваше имя</label>
+                  </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control input input--callback" placeholder="Телефон">
+                  <div class="material">
+                    <input type="text" class="input input--callback" required>
+                    <hr>
+                    <label>Телефон</label>
+                  </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control input input--mail" placeholder="E-mail">
+                  <div class="material">
+                    <input type="text" class="input input--mail" required>
+                    <hr>
+                    <label>E-mail</label>
+                  </div>
                 </div>
                 <div class="form-group">
                   <label>Комментарий</label>
@@ -383,7 +413,8 @@
                       <img src="img/success.svg" class="toast-img" alt="...">
                       <div class="toast-description">
                         <p class="">
-                          Ваше сообщение отправлено!  Мы ответим Вам в ближайшее время
+                          Ваша заявка отправлена! <br />
+                          Мы&nbsp;перезвоним Вам в&nbsp;ближайшее время
                         </p>
                       </div>
                     </div>

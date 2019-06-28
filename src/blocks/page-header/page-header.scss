@@ -57,7 +57,8 @@
 
   &__toggle {
     position: absolute;
-    top: 8px;
+    transform: translate(0%, -50%);
+    top: 50%;
     right: 0px;
     
     @include media-breakpoint-up(lg) {

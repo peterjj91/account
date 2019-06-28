@@ -7,6 +7,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <link href="css/style.min.css?1" rel="stylesheet" media="screen">
 
@@ -146,11 +147,11 @@
             <div class="contacts">
               <div class="contacts__row">
                 <div class="contacts__description">
-                  <div class="h3 contacts__description__title">ООО «Центр бухгалтерских услуг»</div>
+                  <div class="h3 contacts__description__title">ООО &laquo;Центр бухгалтерских услуг&raquo;</div>
 
                   <div class="contacts__block">
-                    <div class="contacts__title">Центральный офис в Москве</div>
-                    <p><strong>Адрес:</strong> 142784, г. Москва, поселение Московский, 22-ой км. Киевского шоссе, домовладение 4, стр. 5, пом. 8-103-2</p>
+                    <div class="contacts__title">Центральный офис в&nbsp;Москве</div>
+                    <p><strong>Адрес:</strong> 142784, г. Москва, поселение Московский, 22-ой км. Киевского шоссе, домовладение&nbsp;4, стр.&nbsp;5, пом. 8-103-2</p>
                     <p><strong>Телефон:</strong> 8 (495) 723-70-49</p>
                     <p><strong>E-mail:</strong> <a href="mailto:info@cbu-online.ru">info@cbu-online.ru</a></p>
                   </div>
@@ -159,24 +160,24 @@
                     <div class="contacts__row">
                       <div class="contacts__item">
                         <div class="contacts__title">Краснодар</div>
-                        <p><strong>Адрес:</strong> 142784, г. Москва, поселение Московский, 22-ой км. Киевского шоссе, домовладение 4, стр. 5, пом. 8-103-2</p>
+                        <p><strong>Адрес:</strong> 142784, г. Москва, поселение Московский, 22-ой км. Киевского шоссе, домовладение&nbsp;4, стр.&nbsp;5, пом. 8-103-2</p>
                         <p><strong>Телефон:</strong> 8 (800) 987-65-43</p>
-                        <p><strong>E-mail:</strong> <a href="mailto:info@cbu-online.ru ">info@cbu-online.ru </a></p>
+                        <p><strong>E-mail:</strong> <a href="mailto:info@cbu-online.ru ">info@cbu-online.ru</a></p>
                       </div>
                       <div class="contacts__item">
                         <div class="contacts__title">Уфа</div>
-                        <p><strong>Адрес:</strong> 142784, г. Москва, поселение Московский, 22-ой км. Киевского шоссе, домовладение 4, стр. 5, пом. 8-103-2</p>
+                        <p><strong>Адрес:</strong> 142784, г. Москва, поселение Московский, 22-ой км. Киевского шоссе, домовладение&nbsp;4, стр.&nbsp;5, пом. 8-103-2</p>
                         <p><strong>Телефон:</strong> 8 (800) 987-65-43</p>
                         <p><strong>E-mail:</strong> <a href="mailto:info@cbu-online.ru">info@cbu-online.ru</a></p>
                       </div>
                     </div>
                   </div>
 
-                  <div class="contacts__block">
+                  <div class="contacts__block contacts__block--half">
                     <div class="contacts__title">Омск</div>
-                    <p><strong>Адрес:</strong> 142784, г. Москва, поселение Московский, 22-ой км. Киевского шоссе, домовладение 4, стр. 5, пом. 8-103-2</p>
+                    <p><strong>Адрес:</strong> 142784, г. Москва, поселение Московский, 22-ой км. Киевского шоссе, домовладение&nbsp;4, стр.&nbsp;5, пом. 8-103-2</p>
                     <p><strong>Телефон:</strong> 8 (800) 987-65-43</p>
-                    <p><strong>E-mail:</strong> <a href="mailto:info@cbu-online.ru">info@cbu-online.ru </a></p>
+                    <p><strong>E-mail:</strong> <a href="mailto:info@cbu-online.ru">info@cbu-online.ru</a></p>
                   </div>
                 </div>
                 <div class="contacts__side">
@@ -190,13 +191,25 @@
                       <div class="modal-body">
                         <form>
                           <div class="form-group">
-                            <input type="text" class="form-control input input--profile" placeholder="Ваше имя">
+                            <div class="material">
+                              <input type="text" class="input input--profile" autocomplete="off" required>
+                              <hr>
+                              <label>Ваше имя *</label>
+                            </div>
                           </div>
                           <div class="form-group">
-                            <input type="text" class="form-control input input--callback" placeholder="Телефон">
+                            <div class="material">
+                              <input type="text" class="input input--callback" required>
+                              <hr>
+                              <label>Телефон *</label>
+                            </div>
                           </div>
                           <div class="form-group">
-                            <input type="text" class="form-control input input--mail" placeholder="E-mail">
+                            <div class="material">
+                              <input type="text" class="input input--mail" required>
+                              <hr>
+                              <label>E-mail *</label>
+                            </div>
                           </div>
                           <div class="form-group">
                             <label>Комментарий</label>
@@ -204,7 +217,7 @@
                           </div>
                           <div class="form-group">
                             <div class="form-mini">
-                              (*) –  отмечены поля, обязательные для заполнения
+                              (*) &mdash; отмечены поля, обязательные для заполнения
                             </div>
                             <button type="button" class="btn btn-primary toggle-message">
                               Отправить
@@ -216,7 +229,8 @@
                                 <img src="img/success.svg" class="toast-img" alt="...">
                                 <div class="toast-description">
                                   <p class="">
-                                    Ваше сообщение отправлено!  Мы ответим Вам в ближайшее время
+                                    Ваше сообщение отправлено! <br>
+                                    Мы&nbsp;ответим Вам в&nbsp;ближайшее время
                                   </p>
                                 </div>
                               </div>
@@ -228,78 +242,81 @@
                   </div>
                 </div>
               </div>
+              
+              <div class="contacts__row">
+                <div class="contacts__description">
+                  <div class="contacts__block">
+                    <div class="contacts__title h3">ООО &laquo;Центр бухгалтерских услуг&raquo;</div>
 
-              <div class="contacts__block">
-                <div class="contacts__title h3">ООО «Центр бухгалтерских услуг»</div>
+                    <div class="contacts__title">ООО «ЦБУ»</div>
 
-                <div class="contacts__title">ООО «ЦБУ»</div>
-
-                <div class="contacts__table">
-                  <div class="contacts__table__row">
-                    <div class="contacts__table__title">
-                      Юридический адрес 
-                    </div>
-                    <div class="contacts__table__text">
-                      108811, РФ, г. Москва, п. Московский, 22-й км Киевского ш.,  вл.4 стр.5
-                    </div>
-                  </div>
-                  <div class="contacts__table__row">
-                    <div class="contacts__table__title">
-                      ИНН
-                    </div>
-                    <div class="contacts__table__text">
-                      7728563668
-                    </div>
-                  </div>
-                  <div class="contacts__table__row">
-                    <div class="contacts__table__title">
-                      КПП
-                    </div>
-                    <div class="contacts__table__text">
-                      770401001
-                    </div>
-                  </div>
-                  <div class="contacts__table__row">
-                    <div class="contacts__table__title">
-                      ОГРН
-                    </div>
-                    <div class="contacts__table__text">
-                      1057748914178
-                    </div>
-                  </div>
-                  <div class="contacts__table__row">
-                    <div class="contacts__table__title">
-                      ОКПО
-                    </div>
-                    <div class="contacts__table__text">
-                      79443947
-                    </div>
-                  </div>
-                  <div class="contacts__table__row">
-                    <div class="contacts__table__title">
-                      Расчетный счет
-                    </div>
-                    <div class="contacts__table__text">
-                      40702810500482000759 ПАО «БАНК УРАЛСИБ» г. Москва
-                    </div>
-                  </div>
-                  <div class="contacts__table__row">
-                    <div class="contacts__table__title">
-                      БИК
-                    </div>
-                    <div class="contacts__table__text">
-                      044525787
-                    </div>
-                  </div>
-                  <div class="contacts__table__row">
-                    <div class="contacts__table__title">
-                      Корреспондентский счет
-                    </div>
-                    <div class="contacts__table__text">
-                      30101810100000000787
+                    <div class="contacts__table">
+                      <div class="contacts__table__row">
+                        <div class="contacts__table__title">Юридический адрес</div>
+                        <div class="contacts__table__text">
+                          108811, РФ, г. Москва, п. Московский, 22-й км&nbsp;Киевского&nbsp;ш., вл.4 стр.5
+                        </div>
+                      </div>
+                      <div class="contacts__table__row">
+                        <div class="contacts__table__title">
+                          ИНН
+                        </div>
+                        <div class="contacts__table__text">
+                          7728563668
+                        </div>
+                      </div>
+                      <div class="contacts__table__row">
+                        <div class="contacts__table__title">
+                          КПП
+                        </div>
+                        <div class="contacts__table__text">
+                          770401001
+                        </div>
+                      </div>
+                      <div class="contacts__table__row">
+                        <div class="contacts__table__title">
+                          ОГРН
+                        </div>
+                        <div class="contacts__table__text">
+                          1057748914178
+                        </div>
+                      </div>
+                      <div class="contacts__table__row">
+                        <div class="contacts__table__title">
+                          ОКПО
+                        </div>
+                        <div class="contacts__table__text">
+                          79443947
+                        </div>
+                      </div>
+                      <div class="contacts__table__row">
+                        <div class="contacts__table__title">
+                          Расчетный счет
+                        </div>
+                        <div class="contacts__table__text">
+                          40702810500482000759&nbsp;ПАО &laquo;БАНК УРАЛСИБ&raquo; г. Москва
+                        </div>
+                      </div>
+                      <div class="contacts__table__row">
+                        <div class="contacts__table__title">
+                          БИК
+                        </div>
+                        <div class="contacts__table__text">
+                          044525787
+                        </div>
+                      </div>
+                      <div class="contacts__table__row">
+                        <div class="contacts__table__title">
+                          Корреспондентский счет
+                        </div>
+                        <div class="contacts__table__text">
+                          30101810100000000787
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="contacts__side"></div>
               </div>
             </div>
 
@@ -362,7 +379,7 @@
 
                 <div class="page-footer__search">
                   <div class="search">
-                    <input type="text" class="search__input">
+                    <input type="text" class="search__input" placeholder="Введите текст для поиска">
                     <button class="search__btn">
                       <img src="img/search.svg" alt="">
                     </button>
@@ -400,10 +417,18 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <input type="text" class="form-control input input--profile" placeholder="Ваше имя">
+              <div class="material">
+                <input type="text" class="input input--profile" autocomplete="off" required>
+                <hr>
+                <label>Ваше имя</label>
+              </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control input input--callback" placeholder="Телефон">
+              <div class="material">
+                <input type="text" class="input input--callback" required>
+                <hr>
+                <label>Телефон</label>
+              </div>
             </div>
             <div class="form-group">
               <div class="form-mini">
@@ -436,10 +461,18 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <input type="text" class="form-control input input--profile" placeholder="Ваше имя">
+              <div class="material">
+                <input type="text" class="input input--profile" autocomplete="off" required>
+                <hr>
+                <label>Ваше имя</label>
+              </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control input input--callback" placeholder="Телефон">
+              <div class="material">
+                <input type="text" class="input input--callback" required>
+                <hr>
+                <label>Телефон</label>
+              </div>
             </div>
             <div class="form-group">
               <div class="form-mini">
@@ -453,7 +486,8 @@
                   <img src="img/success.svg" class="toast-img" alt="...">
                   <div class="toast-description">
                     <p class="">
-                      Ваше сообщение отправлено!  Мы ответим Вам в ближайшее время
+                      Ваша заявка отправлена! <br />
+                      Мы&nbsp;перезвоним Вам в&nbsp;ближайшее время
                     </p>
                   </div>
                 </div>
@@ -509,13 +543,25 @@
             <div class="modal-body">
               <form>
                 <div class="form-group">
-                  <input type="text" class="form-control input input--profile" placeholder="Ваше имя">
+                  <div class="material">
+                    <input type="text" class="input input--profile" autocomplete="off" required>
+                    <hr>
+                    <label>Ваше имя</label>
+                  </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control input input--callback" placeholder="Телефон">
+                  <div class="material">
+                    <input type="text" class="input input--callback" required>
+                    <hr>
+                    <label>Телефон</label>
+                  </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control input input--mail" placeholder="E-mail">
+                  <div class="material">
+                    <input type="text" class="input input--mail" required>
+                    <hr>
+                    <label>E-mail</label>
+                  </div>
                 </div>
                 <div class="form-group">
                   <label>Комментарий</label>
@@ -535,7 +581,8 @@
                       <img src="img/success.svg" class="toast-img" alt="...">
                       <div class="toast-description">
                         <p class="">
-                          Ваше сообщение отправлено!  Мы ответим Вам в ближайшее время
+                          Ваша заявка отправлена! <br />
+                          Мы&nbsp;перезвоним Вам в&nbsp;ближайшее время
                         </p>
                       </div>
                     </div>

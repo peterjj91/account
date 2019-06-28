@@ -8,6 +8,9 @@
   padding: 0px 0px 0px 0px;
 
   &-brand {
+    @include media-breakpoint-up(sm) {
+      margin-right: 50px;
+    }
     @include media-breakpoint-up(xl) {
       margin-right: 90px;
     }

@@ -21,3 +21,96 @@
     background-image: url(../img/mail.svg);
   }
 }
+
+
+.material {
+  position: relative;
+  border: none;
+  overflow: visible;
+  
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 30px 5px 0px;
+    height: 40px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(151, 160, 178, 0.5);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: transparent;
+    outline: none;
+    cursor: text;
+    color: white;
+
+    &::-webkit-input-placeholder {
+      transition: color 300ms ease;
+    }
+    &:not(:focus)::-webkit-input-placeholder {
+      color: transparent;
+    }
+  }
+  
+  hr {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: white;
+    font-size: 1px;
+    will-change: transform, visibility;
+    transition: all 200ms ease-out;
+    transform: scaleX(0);
+    visibility: hidden;
+    z-index: 10;
+  }
+  input:focus ~ hr {
+    // transform: scaleX(1);
+    // visibility: visible;
+  }
+  
+  label {
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    padding-left: 0;
+    padding-right: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    transform-origin: 0 -150%;
+    transition: transform 300ms ease;
+    pointer-events: none;
+    margin: 0 !important;
+  }
+  input:focus ~ label,
+  input:valid ~ label {
+    transform: scale(0.75);
+    color: #6CA3CB;
+    top: -2px;
+  }
+
+  input:focus {
+    &.input {
+      &--profile {
+        background-image: url(../img/profile-active.svg);
+      }
+
+      &--callback {
+        background-image: url(../img/phone-active.svg);
+      }
+
+      &--mail {
+        background-image: url(../img/mail-active.svg);
+      }
+    }
+  }
+}

@@ -192,6 +192,23 @@ a, .link {
     }
   }
 
+  &--map {
+    li {
+      a {
+        
+      }
+    }
+
+    ul {
+      li {
+        a {
+          color: #515153;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
   &--numbers {
     counter-reset: section;
     padding: 0;
@@ -218,7 +235,7 @@ a, .link {
         left: 0;
         counter-increment: section;
         content: "0" counter(section) ".";
-        color: $color-ocean;
+        color: #A7C8E0;
         font-weight: bold;
         font-size: 18px;
         line-height: 150%;

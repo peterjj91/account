@@ -15,6 +15,12 @@
   &:hover {
     background-color: $color-ocean;
     cursor: pointer;
+
+    #{$block-name} {
+      &-title {
+        text-decoration: underline;
+      }
+    }
   }
   
   &-body {
@@ -31,7 +37,7 @@
   }
 
   &-subtitle {
-    font-family: $proximaNova-regular;
+    font-family: $proximaNova-light;
     font-size: 16px;
     line-height: 130%;
     opacity: 0.7;
@@ -58,10 +64,10 @@
     
     &--img1 {
       height: 80px;
-      margin-bottom: -6px;
+      margin-bottom: -16px;
 
       @include media-breakpoint-up(md) {
-        margin-bottom: 0;
+        margin-bottom: -16px;
         height: auto;
       }
     }
@@ -108,6 +114,11 @@
       @include media-breakpoint-up(md) {
       }
     }
+  }
+
+  &.active {
+    background-color: $color-ocean;
+    cursor: pointer;
   }
 
   &--promo {

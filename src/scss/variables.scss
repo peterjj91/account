@@ -9,7 +9,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url('../fonts/ProximaNova-Light.eot');
+  src: local('☺'), url('../fonts/ProximaNova-Light.woff') format('woff'), url('../fonts/ProximaNova-Light.ttf') format('truetype'), url('../fonts/ProximaNova-Light.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $montserrat: 'Montserrat', sans-serif;
+$proximaNova-light: 'ProximaNova-Light';
 $proximaNova-regular: 'ProximaNova-Regular';
 
 $font-family-sans-serif: $montserrat;
@@ -118,42 +127,5 @@ $input-padding-y-lg: 0.5rem !default;
 $input-padding-x-lg: 1rem !default;
 
 
-// animation
-.scale-up-bottom {
-  -webkit-animation: scale-up-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-          animation: scale-up-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-/**
- * ----------------------------------------
- * animation scale-up-bottom
- * ----------------------------------------
- */
-@-webkit-keyframes scale-up-bottom {
-  0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-  }
-}
-@keyframes scale-up-bottom {
-  0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-  }
-}
+
 
