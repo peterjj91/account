@@ -6165,7 +6165,7 @@ textarea.form-control:focus {
           -ms-flex-align: baseline;
               align-items: baseline; }
 .slider__dots .slick-dots li {
-        margin-right: 10px; }
+        margin-right: 20px; }
 .slider__dots .slick-dots li:last-child {
           margin-right: 0; }
 .slider__dots .slick-dots li.slick-active button {
