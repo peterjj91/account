@@ -25,11 +25,10 @@
     margin-bottom: 18px;
     padding-left: 15px;
     padding-right: 15px;
+    width: 100%;
 
     @include media-breakpoint-up(md) {
       @include make-col(8);
-      // padding-left: 15px;
-      // padding-right: 15px;
       padding: 0;
       margin-bottom: 0;
     }

@@ -6154,7 +6154,7 @@ textarea.form-control:focus {
       opacity: 0.5;
       z-index: -1; }
 .slider__dots {
-    margin: 0px 30px;
+    margin: 0px 20px;
     list-style: none; }
 .slider__dots .slick-dots {
       margin: 0;
@@ -6398,7 +6398,8 @@ textarea.form-control:focus {
 .team-promo__content {
     margin-bottom: 18px;
     padding-left: 15px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    width: 100%; }
 .team-promo__content p {
       font-weight: normal;
       font-size: 15px;
@@ -9191,6 +9192,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
                 justify-content: flex-start;
         margin-left: 0px;
         margin-right: 0px; }
+      .slider__dots {
+        margin: 0px 30px; }
             .slider__dots .slick-dots li.slick-active button {
               font-size: 28px;
               line-height: 34px; }

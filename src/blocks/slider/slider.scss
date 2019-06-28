@@ -130,8 +130,12 @@
   }
 
   &__dots {
-    margin: 0px 30px;
+    margin: 0px 20px;
     list-style: none;
+
+    @include media-breakpoint-up(md) {
+      margin: 0px 30px;
+    }
 
     .slick-dots {
       margin: 0;
