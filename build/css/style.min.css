@@ -6137,9 +6137,9 @@ textarea.form-control:focus {
             align-items: center;
     height: 37px;
     margin-top: 37px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin-left: -10px;
     margin-right: -10px; }
 .slider__nav--main {

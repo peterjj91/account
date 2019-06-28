@@ -100,13 +100,13 @@
     align-items: center;
     height: 37px;
     margin-top: 37px;
-    justify-content: space-between;
+    justify-content: center;
     margin-left: -10px;
     margin-right: -10px;
 
     @include media-breakpoint-up(md) {
       margin-top: 89px;
-      justify-content: end;
+      justify-content: flex-start;
       margin-left: 0px;
       margin-right: 0px;
     }
