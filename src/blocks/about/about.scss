@@ -335,7 +335,7 @@
         margin-bottom: 19px;
         position: relative;
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(xl) {
           display: flex;
           padding-top: 0;
           margin-bottom: 31px;
@@ -343,12 +343,12 @@
       }
 
       &__img {
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           position: absolute;
           top: 0;
           left: 0;
         }
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
           flex: 0 0 38px;
           margin-right: 10px;
         }
@@ -365,10 +365,10 @@
         line-height: 130% !important;
         margin-bottom: 0;
         
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           margin-bottom: 0 !important;
         }
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
           font-size: 18px;
         }
       }

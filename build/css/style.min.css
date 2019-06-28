@@ -6137,9 +6137,9 @@ textarea.form-control:focus {
             align-items: center;
     height: 37px;
     margin-top: 37px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: -10px;
     margin-right: -10px; }
 .slider__nav--main {
@@ -9185,9 +9185,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         margin-bottom: 40px; }
       .slider__nav {
         margin-top: 89px;
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: end;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         margin-left: 0px;
         margin-right: 0px; }
             .slider__dots .slick-dots li.slick-active button {
@@ -9456,19 +9456,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         padding: 45px 53px 40px 53px; }
         .about__think__info:before {
           top: 38px; }
-        .about__think__list li {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          padding-top: 0;
-          margin-bottom: 31px; }
-      .about__think__list__img {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 0 38px;
-                flex: 0 0 38px;
-        margin-right: 10px; }
-        .about__think__list p {
-          font-size: 18px; }
       .about__think--fails {
         padding-bottom: 69px; }
     .about__people {
@@ -10449,6 +10436,13 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
       padding-top: 6px; }
         .about__think__info__title {
           margin-bottom: 23px; }
+      .about__think__list__img {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 38px;
+                flex: 0 0 38px;
+        margin-right: 10px; }
+        .about__think__list p {
+          font-size: 18px; }
       .about__people__title {
         margin-bottom: 103px; }
     .about__people__row {
@@ -11176,6 +11170,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         display: -webkit-box !important;
         display: -ms-flexbox !important;
         display: flex !important; }
+        .about__think__list li {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          padding-top: 0;
+          margin-bottom: 31px; }
     .contacts__block--half {
       max-width: 50%; } }
 @media (max-width: 575.98px) {
@@ -11257,12 +11257,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         font-size: 22px;
         line-height: 130%;
         margin-bottom: 40px; }
-      .about__think__list__img {
-        position: absolute;
-        top: 0;
-        left: 0; }
-        .about__think__list p {
-          margin-bottom: 0 !important; }
       .about__people__title {
         font-size: 22px;
         line-height: 130%; }
@@ -11303,6 +11297,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
           font-size: 17px;
           line-height: 22px;
           margin-bottom: 11px; }
+      .about__think__list__img {
+        position: absolute;
+        top: 0;
+        left: 0; }
+        .about__think__list p {
+          margin-bottom: 0 !important; }
     .contacts__block .contacts__row {
       display: block; } }
 @media (prefers-reduced-motion: reduce) {
