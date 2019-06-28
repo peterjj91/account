@@ -29,8 +29,10 @@
 
     @include media-breakpoint-up(md) {
       @include make-col(8);
-      padding: 0;
       margin-bottom: 0;
+    }
+    @media(min-width: 1250px) {
+      padding: 0;
     }
 
     p {

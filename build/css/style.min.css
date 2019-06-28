@@ -9275,7 +9275,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
             -ms-flex: 0 0 66.66667%;
                 flex: 0 0 66.66667%;
         max-width: 66.66667%;
-        padding: 0;
         margin-bottom: 0; }
         .team-promo__content p {
           font-size: 18px;
@@ -11184,6 +11183,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
           margin-bottom: 31px; }
     .contacts__block--half {
       max-width: 50%; } }
+@media (min-width: 1250px) {
+      .team-promo__content {
+        padding: 0; } }
 @media (max-width: 575.98px) {
   .table-responsive-sm {
     display: block;
@@ -11198,25 +11200,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     padding-left: 0; }
         .slider__content .list-style br {
           display: none; } }
-@media (max-width: 767.98px) {
-  .table-responsive-md {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; }
-    .table-responsive-md > .table-bordered {
-      border: 0; }
-  .navbar-expand-md > .container,
-  .navbar-expand-md > .container-fluid {
-    padding-right: 0;
-    padding-left: 0; }
-      .article__calculate .btn {
-        width: 100%; }
-        .article__info p {
-          font-size: 16px;
-          line-height: 150%; }
-      .promo-head__img {
-        width: 288px; } }
 @media (max-width: 991.98px) {
   .table-responsive-lg {
     display: block;
@@ -11448,5 +11431,24 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+@media (max-width: 767.98px) {
+  .table-responsive-md {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; }
+    .table-responsive-md > .table-bordered {
+      border: 0; }
+  .navbar-expand-md > .container,
+  .navbar-expand-md > .container-fluid {
+    padding-right: 0;
+    padding-left: 0; }
+      .article__calculate .btn {
+        width: 100%; }
+        .article__info p {
+          font-size: 16px;
+          line-height: 150%; }
+      .promo-head__img {
+        width: 288px; } }
 
 /*# sourceMappingURL=style.min.css.map */
