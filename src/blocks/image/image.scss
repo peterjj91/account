@@ -9,12 +9,29 @@
   &-prev {
     @include sprite($icon-previous);
     display: inline-block;
-    
   }
 
   &-next {
     @include sprite($icon-next);
+    display: inline-block; 
+  }
+
+  &-prev-big {
     display: inline-block;
-    
+    width: 45px;
+    height: 15px;
+    background-image: url(../img/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &-next-big {
+    display: inline-block;
+    width: 45px;
+    height: 15px;
+    background-image: url(../img/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
