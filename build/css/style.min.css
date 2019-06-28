@@ -6154,7 +6154,7 @@ textarea.form-control:focus {
       opacity: 0.5;
       z-index: -1; }
 .slider__dots {
-    margin: 0px 20px;
+    margin: 0px 10px;
     list-style: none; }
 .slider__dots .slick-dots {
       margin: 0;
@@ -6165,7 +6165,7 @@ textarea.form-control:focus {
           -ms-flex-align: baseline;
               align-items: baseline; }
 .slider__dots .slick-dots li {
-        margin-right: 30px; }
+        margin-right: 10px; }
 .slider__dots .slick-dots li:last-child {
           margin-right: 0; }
 .slider__dots .slick-dots li.slick-active button {
@@ -9194,6 +9194,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         margin-right: 0px; }
       .slider__dots {
         margin: 0px 30px; }
+          .slider__dots .slick-dots li {
+            margin-right: 30px; }
             .slider__dots .slick-dots li.slick-active button {
               font-size: 28px;
               line-height: 34px; }
