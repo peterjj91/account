@@ -23,6 +23,7 @@
   
   &__content {
     margin-bottom: 18px;
+    padding-left: 15px;
     padding-right: 15px;
 
     @include media-breakpoint-up(md) {
@@ -90,6 +91,7 @@
     @include media-breakpoint-down(md) {
       max-width: 290px;
       margin: 0 auto;
+      margin-bottom: 30px;
     }
     @include media-breakpoint-up(md) {
       @include make-col(4);

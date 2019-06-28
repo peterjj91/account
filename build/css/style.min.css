@@ -6397,6 +6397,7 @@ textarea.form-control:focus {
     margin-bottom: 24px; }
 .team-promo__content {
     margin-bottom: 18px;
+    padding-left: 15px;
     padding-right: 15px; }
 .team-promo__content p {
       font-weight: normal;
@@ -11237,7 +11238,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         margin-bottom: 30px; }
     .team-promo__quote {
       max-width: 290px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      margin-bottom: 30px; }
     .service ul > li {
       padding-left: 16px;
       margin-bottom: 9px; }
