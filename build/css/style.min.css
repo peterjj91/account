@@ -5903,22 +5903,22 @@ textarea.form-control:focus {
 .pagination .page-link:hover, .pagination .page-link:focus {
       text-decoration: underline;
       background-color: transparent; }
-.pagination .page-link__arrow {
+.pagination .page-link--arrow {
       min-width: 40px;
       text-align: center;
       background-color: #EAECF0;
       padding: 0; }
-.pagination .page-link__arrow svg {
+.pagination .page-link--arrow svg {
         fill: transparent;
         stroke: #9B9CA0; }
-.pagination .page-link__arrow:hover {
+.pagination .page-link--arrow:hover {
         background-color: #6CA3CB; }
-.pagination .page-link__arrow:hover .icon-prev {
+.pagination .page-link--arrow:hover .icon-prev {
           background-image: url(../img/sprite-05628590643218667.png);
           background-position: 0px 0px;
           width: 9px;
           height: 13px; }
-.pagination .page-link__arrow:hover .icon-next {
+.pagination .page-link--arrow:hover .icon-next {
           background-image: url(../img/sprite-05628590643218667.png);
           background-position: -13px 0px;
           width: 8px;

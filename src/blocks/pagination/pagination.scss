@@ -59,16 +59,11 @@
       background-color: transparent;
     }
 
-    &__arrow {
+    &--arrow {
       min-width: 40px;
       text-align: center;
       background-color: $color-shadow;
       padding: 0;
-
-      svg {
-        fill: transparent;
-        stroke: #9B9CA0;
-      }
 
       &:hover {
         background-color: $color-ocean;
